@@ -169,13 +169,13 @@ def main(hypergen_out):
             "AI_mummer",
             "Aligned_bases_mummer",
             "ANI_fastani",
-            "Error_fastani",
             "ANI_hypergen",
-            "Error_hypergen",
         ],
         sep=";",
     )
-    results = results[(results['AI_mummer'] > 90.0)]
+    results = results[(results["AI_mummer"] > 90.0)]  # type: ignore
+    results["Error_fastani"] = results["AI_mummer"] - results["ANI_fastani"]
+    results["Error_hypergen"] = results["AI_mummer"] - results["ANI_hypergen"]
     stat_tests(
         results, "Aligned_bases_mummer", "AI_mummer", "Aligned bases vs AI mummer"
     )
@@ -192,14 +192,30 @@ def main(hypergen_out):
         f"Error_fastani vs Error_{hypergen_out}",
     )
 
-    print(f"fastani max e: {results["Error_fastani"].max()}")
-    print(f"hypergen max e {results["Error_hypergen"].max()}")
+    print(f"fastani max e: {results["Error_fastani"].abs().max()}")
+    print(f"hypergen max e {results["Error_hypergen"].abs().max()}")
     print(f"fastani median e: {results["Error_fastani"].median()}")
     print(f"hypergen median e {results["Error_hypergen"].median()}")
     print(f"fastani mean e: {results["Error_fastani"].mean()}")
     print(f"hypergen mean e {results["Error_hypergen"].mean()}")
     print(f"fastani std e: {results["Error_fastani"].std()}")
     print(f"hypergen std e {results["Error_hypergen"].std()}")
+    with open("hypergen-results.csv", "a") as f:
+        paperback_writer = csv.writer(f, delimiter=";")
+        paperback_writer.writerow(
+            (
+                hypergen_out,
+                results["Error_hypergen"].abs().max(),
+                results["Error_hypergen"].abs().median(),
+                results["Error_hypergen"].abs().mean(),
+                np.sqrt(results["Error_hypergen"].abs().pow(2).mean()),
+                ((results["Error_hypergen"].abs() / results["AI_mummer"]) * 100).mean(),
+                results["Error_fastani"].abs().max()-results["Error_hypergen"].abs().max(),
+                results["Error_fastani"].abs().mean()-results["Error_hypergen"].abs().mean(),
+                np.sqrt(results["Error_fastani"].abs().pow(2).mean())-np.sqrt(results["Error_hypergen"].abs().pow(2).mean()),
+                ((results["Error_fastani"].abs() / results["AI_mummer"]) * 100).mean()-((results["Error_hypergen"].abs() / results["AI_mummer"]) * 100).mean(),
+            )
+        )
 
 
 def write_2_csv(data_dict: dict, title):
@@ -280,9 +296,7 @@ def merger(mummer: dict, fastani: dict, hypergen: dict):
                 mummer_ai,
                 mummer_aligned_bases,
                 fastani_ani,
-                mummer_ai - fastani_ani,
                 hypergen_ani,
-                mummer_ai - hypergen_ani,
             )
 
     return merge
@@ -296,8 +310,8 @@ def write_results_csv(
         for thing in data_dict.items():
             tup, anis = thing
             code1, code2 = tup
-            v1, v2, v3, v4, v5, v6 = anis
-            paperback_writer.writerow((code1, code2, v1, v2, v3, v4, v5, v6))
+            v1, v2, v3, v4 = anis
+            paperback_writer.writerow((code1, code2, v1, v2, v3, v4))
 
 
 def extracter():
@@ -340,5 +354,37 @@ def extracter():
         write_results_csv(merge)
         main(hypergen_out)
 
-extracter()
 
+def analyze_results():
+    df = pd.read_csv(
+        "hypergen-results.csv",
+        names=[
+            "hypergen_file",
+            "max_error",
+            "MedianAE",
+            "MAE",
+            "MRSS",
+            "MPAE",
+            "max_errorf",
+            "MAEf",
+            "MRSSf",
+            "MPAEf",
+        ],
+        delimiter=";",
+    )
+
+    print_results(df, "max_error")
+    print_results(df, "MedianAE")
+    print_results(df, "MAE")
+    print_results(df, "MRSS")
+    print_results(df, "MPAE")
+
+
+def print_results(df, c):
+    print(c)
+    df.sort_values(c, inplace=True, ascending=True)
+    print(df.head())
+
+
+extracter()
+analyze_results()
