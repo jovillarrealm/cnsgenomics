@@ -2,13 +2,13 @@
 
 print_help() {
     echo ""
-    echo "Usage: $0 -i <taxon> [-o <directorio_output>] [-a path/to/api/key/file]"
+    echo "Usage: $0 -i <taxon> [-o <directorio_output>] [-a path/to/api/key/file] [-p GCA or GCF]"
     echo ""
     echo ""
     echo ""
     echo "This script assumes 'datasets' and 'dataformat' are in PATH"
     echo ""
-    echo "Summaries will include duplication"
+    echo "Summaries may include duplication"
     echo ""
     echo ""
     
@@ -21,7 +21,8 @@ fi
 
 
 output_dir="./"
-while getopts ":h:i:o:a:" opt; do
+source_db='all'
+while getopts ":h:i:o:a:p:" opt; do
     case "${opt}" in
         i)
             taxon="${OPTARG}"
@@ -31,6 +32,9 @@ while getopts ":h:i:o:a:" opt; do
         ;;
         a)
             api_key=$(cat "${OPTARG}")
+        ;;
+        p)
+            prefix="${OPTARG}"
         ;;
         h)
             print_help
@@ -56,11 +60,16 @@ mkdir -p  "$output_dir" || {
 
 download_file="$output_dir""$taxon""_""$(date +'%d-%m-%Y')"".tsv"
 
+if [ "$prefix" = "GCA" ]; then
+    source_db="GenBank"
+    echo "Downloading only GCA"
+fi
+
 if [ -z ${api_key+x} ]; then
-    datasets summary genome taxon "$taxon" --assembly-source 'all' --assembly-version "latest" --exclude-atypical --exclude-multi-isolate --mag "exclude" --as-json-lines |
+    datasets summary genome taxon "$taxon" --assembly-source "$source_db" --assembly-version "latest"  --as-json-lines |
     dataformat tsv genome --fields accession,organism-name,organism-infraspecific-strain,assmstats-total-sequence-len,assmstats-contig-n50,assmstats-gc-count,assmstats-gc-percent > "$download_file"
 else
-    datasets summary genome taxon "$taxon" --api-key "$api_key" --assembly-source 'all' --assembly-version "latest" --exclude-atypical --exclude-multi-isolate --mag "exclude"  --as-json-lines |
+    datasets summary genome taxon "$taxon" --api-key "$api_key" --assembly-source "$source_db" --assembly-version "latest" --as-json-lines |
     dataformat tsv genome --fields accession,organism-name,organism-infraspecific-strain,assmstats-total-sequence-len,assmstats-contig-n50,assmstats-gc-count,assmstats-gc-percent > "$download_file"
 fi
 
