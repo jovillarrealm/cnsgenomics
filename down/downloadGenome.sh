@@ -149,6 +149,7 @@ if [[ -d "$ref_seq_dir" ]]; then
         find "$ref_seq_dir" -type f -print0 | xargs -0 -I {} -P  "$num_process" count-fasta-rs -c "$stats_refseq_file"  {}
     fi
 fi
+count-fasta-plots "$stats_file"
 echo "** DONE **"
 end_time=$(date +%s)
 elapsed_time=$((end_time - start_time))

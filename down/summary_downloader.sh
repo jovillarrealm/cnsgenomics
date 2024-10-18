@@ -66,10 +66,10 @@ if [ "$prefix" = "GCA" ]; then
 fi
 
 if [ -z ${api_key+x} ]; then
-    datasets summary genome taxon "$taxon" --assembly-source "$source_db" --assembly-version "latest"  --as-json-lines |
+    datasets summary genome taxon "$taxon" --assembly-source "$source_db" --assembly-version "latest" --mag "exclude" --as-json-lines |
     dataformat tsv genome --fields accession,organism-name,organism-infraspecific-strain,assmstats-total-sequence-len,assmstats-contig-n50,assmstats-gc-count,assmstats-gc-percent > "$download_file"
 else
-    datasets summary genome taxon "$taxon" --api-key "$api_key" --assembly-source "$source_db" --assembly-version "latest" --as-json-lines |
+    datasets summary genome taxon "$taxon" --api-key "$api_key" --assembly-source "$source_db" --mag "exclude" --assembly-version "latest" --as-json-lines |
     dataformat tsv genome --fields accession,organism-name,organism-infraspecific-strain,assmstats-total-sequence-len,assmstats-contig-n50,assmstats-gc-count,assmstats-gc-percent > "$download_file"
 fi
 

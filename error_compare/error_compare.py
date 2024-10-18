@@ -162,7 +162,7 @@ def read_fastani_extracts(fastani_path):
 
 def main(hypergen_out):
     results: pd.DataFrame = pd.read_csv(
-        "error_compare/results5.csv",
+        f"error_compare/results_{hypergen_out}.csv",
         names=[
             "file1",
             "file2",
@@ -173,7 +173,7 @@ def main(hypergen_out):
         ],
         sep=";",
     )
-    results = results[(results["AI_mummer"] > 90.0)]  # type: ignore
+    results = results[(results["AI_mummer"] > 95.0)]  # type: ignore
     results["Error_fastani"] = results["AI_mummer"] - results["ANI_fastani"]
     results["Error_hypergen"] = results["AI_mummer"] - results["ANI_hypergen"]
     stat_tests(
@@ -304,8 +304,9 @@ def merger(mummer: dict, fastani: dict, hypergen: dict):
 
 def write_results_csv(
     data_dict: dict[tuple[str, ...], tuple[float, float, float, float, float, float]],
+    hypergen_out:str
 ):
-    with open("error_compare/results5.csv", "w") as f:
+    with open(f"error_compare/results_{hypergen_out}.csv", "w") as f:
         paperback_writer = csv.writer(f, delimiter=";")
         for thing in data_dict.items():
             tup, anis = thing
@@ -351,7 +352,7 @@ def extracter():
         print(unhandled)
         merge = merger(mummer, fastani_extracts_data, hypergen_data)
         print("writing results")
-        write_results_csv(merge)
+        write_results_csv(merge, hypergen_out)
         main(hypergen_out)
 
 
