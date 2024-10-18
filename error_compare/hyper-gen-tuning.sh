@@ -28,10 +28,10 @@ kmer_size=21
 iterations=0
 jterations=0
 while [[ "$hv_d" -le 1048576 ]]; do
-    filename=s"$scaled"-d"$hv_d"
+    filename=s"$scaled"-d"$hv_d"-k"$kmer_size"
     if [[ ! -f "$filename"".out" ]];then
-        hyper-gen sketch -p "$out_dir" -s "$scaled" -d "$hv_d" -o "$filename".sketch -t "$threads" -a 90 -k "$kmer_size"
-        hyper-gen dist -r "$filename".sketch -q "$filename".sketch -s "$scaled" -d "$hv_d" -o "$filename".out -t "$threads" -a 90 -k "$kmer_size"
+        hyper-gen sketch -p "$out_dir" -k "$kmer_size" -s "$scaled" -d "$hv_d" -o "$filename".sketch -t "$threads" -a 90 
+        hyper-gen dist -r "$filename".sketch -q "$filename".sketch -k "$kmer_size" -s "$scaled" -d "$hv_d" -o "$filename".out -t "$threads" -a 90 
     fi
     
     #when reached, then increase j until threadshold, resetting k each time

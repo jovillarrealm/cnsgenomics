@@ -73,6 +73,15 @@ END {
     }'
 }
 
+# Function to update the genomic directory based on the current batch
+update_genomic_dir() {
+    genomic_dir="${output_dir}GENOMIC${batch_number}/"
+    mkdir -p "$genomic_dir" || {
+        echo "Error creating directory: $genomic_dir"
+        exit 1
+    }
+    echo "Created/Using directory: $genomic_dir"
+}
 
 
 download_and_unzip() {
@@ -174,8 +183,14 @@ done
 echo "TSV: ""$input_file"
 echo "Output directory for GENOMIC: ""$output_dir"
 # Create temporary and output directories
+# Initialize counters for batches and files
+batch_size=50000
+batch_number=1
+file_count=0
+
 tmp_dir="$output_dir""tmp/"
 genomic_dir="$output_dir""GENOMIC/"
+
 
 mkdir -p "$tmp_dir" "$genomic_dir" || {
     echo "Error creating directories"
@@ -199,8 +214,17 @@ process_filename |
 keep_GCX  > "$tmp_names"
 while read -r accession accession_name filename; do
     # Start download in the background
-    
     download_and_unzip &
+
+    # Update the file counter
+    file_count=$((file_count + 1))
+
+    # Check if we have reached the batch size
+    if (( file_count % batch_size == 0 )); then
+        # Increment batch number and update the genomic directory
+        batch_number=$((batch_number + 1))
+        update_genomic_dir
+    fi
     
     # Limit the number of concurrent jobs
     if [[ $(jobs -r -p | wc -l) -ge $num_process ]]; then
