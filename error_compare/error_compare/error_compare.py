@@ -387,5 +387,4 @@ def print_results(df, c):
     print(df.head())
 
 
-extracter()
-analyze_results()
+
