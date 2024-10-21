@@ -126,27 +126,42 @@ num_process="$((num_process / 2))"
 
 # Make the file if it does not already exist
 if [ ! -f "$stats_file" ];then
-    echo "filename;assembly_length;number_of_sequences;average_length;largest_contig;shortest_contig;N50;GC_percentage;total_N;N_percentage" > "$stats_file"
-fi
-
-
-if [ "$(wc -l "$stats_file" | cut -d " " -f 1)" -gt 1 ]; then
-    echo "Stats file already exists"
-else
     echo "Analyzing secuences"
-    find "$genomic_dir" -type f -print0 | xargs -0 -I {} -P  "$num_process" count-fasta-rs -c "$stats_file"  {}
+    #dircount=0
+    while IFS= read -r -d '' dir
+    do
+        #stats_file="$output_dir""$taxon""_""$today""_stats$dircount.csv"
+        stats_file="$output_dir""$taxon""_""$today""_stats.csv"
+        echo "$dir" and "$stats_file"
+        
+        count-fasta-rs -c "$stats_file" -d "$dir"
+        #dircount=$((dircount + 1))
+        
+    done <   <(find "$output_dir" -name "GENOMIC*" -type d -print0)
+else
+    echo "Stats file already exists"
+    
 fi
+
+
 
 
 if [[ -d "$ref_seq_dir" ]]; then
     if [ ! -f "$stats_refseq_file" ];then
-        echo "filename;assembly_length;number_of_sequences;average_length;largest_contig;shortest_contig;N50;GC_percentage;total_N;N_percentage" > "$stats_refseq_file"
-    fi
-    if [ "$(wc -l "$stats_refseq_file" | cut -d " " -f 1)" -gt 1 ]; then
-        echo "RefSeq Stats file already exists"
-    else
         echo "Analyzing Refseq secuences"
-        find "$ref_seq_dir" -type f -print0 | xargs -0 -I {} -P  "$num_process" count-fasta-rs -c "$stats_refseq_file"  {}
+        #dircount=0
+        while IFS= read -r -d '' dir
+        do
+            #stats_file="$output_dir""$taxon""_""$today""_stats$dircount.csv"
+            stats_file="$output_dir""$taxon""_""$today""_stats.csv"
+            #echo "$dir" and "$stats_file"
+            
+            count-fasta-rs -c "$stats_file" -d "$dir"
+            #dircount=$((dircount + 1))
+            
+        done <   <(find "$output_dir" -name "GENOMIC*" -type d -print0)
+    else
+        echo "RefSeq Stats file already exists"
     fi
 fi
 count-fasta-plots "$stats_file"
