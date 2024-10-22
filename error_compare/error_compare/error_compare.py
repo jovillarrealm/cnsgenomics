@@ -362,7 +362,6 @@ def analyze_results():
         names=[
             "hypergen_file",
             "max_error",
-            "MedianAE",
             "MAE",
             "MRSS",
             "MPAE",

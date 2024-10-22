@@ -127,15 +127,14 @@ num_process="$((num_process / 2))"
 # Make the file if it does not already exist
 if [ ! -f "$stats_file" ];then
     echo "Analyzing secuences"
-    #dircount=0
+    dircount=0
     while IFS= read -r -d '' dir
     do
-        #stats_file="$output_dir""$taxon""_""$today""_stats$dircount.csv"
-        stats_file="$output_dir""$taxon""_""$today""_stats.csv"
+        stats_file="$output_dir""$taxon""_""$today""_stats$dircount.csv"
         echo "$dir" and "$stats_file"
         
         count-fasta-rs -c "$stats_file" -d "$dir"
-        #dircount=$((dircount + 1))
+        dircount=$((dircount + 1))
         
     done <   <(find "$output_dir" -name "GENOMIC*" -type d -print0)
 else
@@ -149,15 +148,13 @@ fi
 if [[ -d "$ref_seq_dir" ]]; then
     if [ ! -f "$stats_refseq_file" ];then
         echo "Analyzing Refseq secuences"
-        #dircount=0
+        dircount=0
         while IFS= read -r -d '' dir
         do
-            #stats_file="$output_dir""$taxon""_""$today""_stats$dircount.csv"
-            stats_file="$output_dir""$taxon""_""$today""_stats.csv"
-            #echo "$dir" and "$stats_file"
-            
+            stats_file="$output_dir""$taxon""_""$today""_stats$dircount.csv"
+            stats_file="$output_dir""$taxon""_""$today""_stats.csv"            
             count-fasta-rs -c "$stats_file" -d "$dir"
-            #dircount=$((dircount + 1))
+            dircount=$((dircount + 1))
             
         done <   <(find "$output_dir" -name "GENOMIC*" -type d -print0)
     else
