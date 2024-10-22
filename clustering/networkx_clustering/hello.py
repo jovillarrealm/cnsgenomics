@@ -21,11 +21,17 @@ def create_clusters_with_weights(filename, threshold):
             avg_identity = float(row["ANI_HG"])
 
             # Add the edge with a weight if the identity is above the threshold
-            if avg_identity >= threshold and G1 != G2:
+            if avg_identity >= threshold:
                 G.add_edge(G1, G2, weight=avg_identity)
 
     # Find connected components, which are your clusters
     clusters = list(nx.connected_components(G))
+    
+    # Find isolated nodes (nodes with no edges)
+    isolated_nodes = list(nx.isolates(G))
+
+    # Find connected nodes (all nodes that have at least one connection)
+    connected_nodes = list(set(G.nodes) - set(isolated_nodes))
 
     # Extract the edges with weights for each cluster
     weighted_clusters = [
@@ -37,41 +43,8 @@ def create_clusters_with_weights(filename, threshold):
         # for cluster in clusters if len(list(cluster)) > 3
     ]
 
-    return G, weighted_clusters, clusters
+    return G, weighted_clusters, connected_nodes, isolated_nodes
 
-
-# Function to visualize the graph
-def visualize_clusters(G, clusters):
-    # Set up the plot
-    plt.figure(figsize=(12, 8))
-
-    # Create a layout for the graph
-    pos = nx.spring_layout(G, seed=42)  # Spring layout for better visualization
-
-    clusters = filter(lambda cluster: len(cluster["nodes"]) > 3, clusters)
-    clusters = [max(clusters,key=lambda cluster: len(cluster["nodes"]))]
-
-    # Draw nodes and edges
-    for cluster in clusters:
-        subgraph = G.subgraph(cluster["nodes"])
-
-        # Draw nodes (using a unique color per cluster)
-        nx.draw_networkx_nodes(subgraph, pos, node_size=300, alpha=0.7)
-
-        # Draw edges with varying widths based on weights
-        edges, weights = zip(*nx.get_edge_attributes(subgraph, "weight").items())
-        nx.draw_networkx_edges(
-            subgraph, pos, edgelist=edges, width=[w / 10 for w in weights], alpha=0.5
-        )
-
-    # Draw labels
-    nx.draw_networkx_labels(G, pos, font_size=10)
-
-    # Add a title and show the plot
-    plt.title("Clusters of Genomes with Weighted Edges by Average Identity")
-    plt.axis("off")
-    plt.savefig(f"{threshold}_clusters.png")
-    plt.clf()
 
 
 if __name__ == "__main__":
@@ -83,11 +56,15 @@ if __name__ == "__main__":
     for threshold in thresholds:
         print(f"Doing {threshold}")
         with open(f"{threshold}_clusters.csv", "w") as f:
-            G, w_clusters, clusters = create_clusters_with_weights(
-                csv_file_name, threshold
-            )
-            visualize_clusters(G, w_clusters)
-            paperback_writer = csv.writer(f, delimiter=";")
-            clusters = sorted(clusters, key=len, reverse=True)
-            for cluster in clusters:
-                paperback_writer.writerow(cluster)
+            with open(f"{threshold}_isolates.csv", "w") as g:
+                G, w_clusters, clusters, isolates = create_clusters_with_weights(
+                    csv_file_name, threshold
+                )
+                connected_writer = csv.writer(f, delimiter=";")
+                isolates_writer = csv.writer(g, delimiter=";")
+                clusters = sorted(clusters, key=len, reverse=True)
+                for cluster in clusters:
+                    connected_writer.writerow(cluster)
+                for isolate in isolates:
+                    isolates_writer.writerow(cluster)
+                    
