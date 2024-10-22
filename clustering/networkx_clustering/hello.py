@@ -1,5 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import io
 import scipy
 import sys
 import csv
@@ -21,17 +22,20 @@ def create_clusters_with_weights(filename, threshold):
             avg_identity = float(row["ANI_HG"])
 
             # Add the edge with a weight if the identity is above the threshold
-            if avg_identity >= threshold:
+            if avg_identity >= threshold and G1 != G2:
                 G.add_edge(G1, G2, weight=avg_identity)
+            G.add_node(G1)
+            G.add_node(G2)
+
 
     # Find connected components, which are your clusters
-    clusters = list(nx.connected_components(G))
+    clusters = list(frozenset(i) for i in nx.connected_components(G))
     
     # Find isolated nodes (nodes with no edges)
-    isolated_nodes = list(nx.isolates(G))
+    isolated_nodes = list(frozenset([i]) for i in nx.isolates(G))
 
     # Find connected nodes (all nodes that have at least one connection)
-    connected_nodes = list(set(G.nodes) - set(isolated_nodes))
+    connected_nodes = list(set(clusters) - set(isolated_nodes))
 
     # Extract the edges with weights for each cluster
     weighted_clusters = [
@@ -49,10 +53,10 @@ def create_clusters_with_weights(filename, threshold):
 
 if __name__ == "__main__":
     # csv_file_name = sys.argv[1]
-    csv_file_name = "/home/jorge/22julia/cnsgenomics/error_compare/s2400-d65536.out.csv"
+    csv_file_name = "/home/jorge/22julia/cnsgenomics/error_compare/s2400-d131072.out.csv"
     # Load the CSV data into a pandas DataFrame
     # Adjust the 'sep' parameter if your CSV uses a different delimiter
-    thresholds = (i / 10 for i in range(1000, 993, -1))
+    thresholds = [100.0, 99.9, 99.5, 99.0, 98.0, ]
     for threshold in thresholds:
         print(f"Doing {threshold}")
         with open(f"{threshold}_clusters.csv", "w") as f:
@@ -61,10 +65,9 @@ if __name__ == "__main__":
                     csv_file_name, threshold
                 )
                 connected_writer = csv.writer(f, delimiter=";")
-                isolates_writer = csv.writer(g, delimiter=";")
                 clusters = sorted(clusters, key=len, reverse=True)
                 for cluster in clusters:
                     connected_writer.writerow(cluster)
-                for isolate in isolates:
-                    isolates_writer.writerow(cluster)
+                isolates = (tuple(isolate)[0] for isolate in isolates)
+                g.write('\n'.join(isolates))
                     
