@@ -1,0 +1,221 @@
+Hello from error-compare!
+Please run this from cnsgenomics
+reading mummer
+reading fastani
+reading hypergen
+default.out
+merging
+{}
+writing results
+Aligned bases vs AI mummer
+             file1          file2  ...  Error_fastani  Error_hypergen
+10   GCA_000009765  GCA_005406005  ...        -0.0039          0.3463
+11   GCA_000009765  GCA_005405965  ...         0.0029          0.3314
+95   GCA_000010605  GCA_009866455  ...         0.0228          0.0134
+136  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0682
+188  GCA_000091305  GCA_033792695  ...         0.0220          0.0381
+
+[5 rows x 8 columns]
+Pearson: 0.3993206795591585, R^2: 0.15945700512358815
+Slope: SCC 0.5153513710124334
+Is there any correlation? p-value=2.5445460178092808e-08
+Negative correlation? p-value=0.9999999872772699
+Positive correlation? p-value=1.2722730089046404e-08
+AI_mummer vs Error fastani
+             file1          file2  ...  Error_fastani  Error_hypergen
+10   GCA_000009765  GCA_005406005  ...        -0.0039          0.3463
+11   GCA_000009765  GCA_005405965  ...         0.0029          0.3314
+95   GCA_000010605  GCA_009866455  ...         0.0228          0.0134
+136  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0682
+188  GCA_000091305  GCA_033792695  ...         0.0220          0.0381
+
+[5 rows x 8 columns]
+Pearson: 0.6300260977624335, R^2: 0.39693288386175934
+Slope: SCC 0.509617047918296
+Is there any correlation? p-value=3.845677083665444e-08
+Negative correlation? p-value=0.9999999807716146
+Positive correlation? p-value=1.922838541832722e-08
+AI_mummer vs fastani
+             file1          file2  ...  Error_fastani  Error_hypergen
+10   GCA_000009765  GCA_005406005  ...        -0.0039          0.3463
+11   GCA_000009765  GCA_005405965  ...         0.0029          0.3314
+95   GCA_000010605  GCA_009866455  ...         0.0228          0.0134
+136  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0682
+188  GCA_000091305  GCA_033792695  ...         0.0220          0.0381
+
+[5 rows x 8 columns]
+Pearson: 0.9521122317957541, R^2: 0.9065177019350918
+Slope: SCC 0.9305491488754541
+Is there any correlation? p-value=7.259648064368398e-46
+Negative correlation? p-value=1.0
+Positive correlation? p-value=3.629824032184199e-46
+AI_mummer vs Error_default.out
+             file1          file2  ...  Error_fastani  Error_hypergen
+10   GCA_000009765  GCA_005406005  ...        -0.0039          0.3463
+11   GCA_000009765  GCA_005405965  ...         0.0029          0.3314
+95   GCA_000010605  GCA_009866455  ...         0.0228          0.0134
+136  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0682
+188  GCA_000091305  GCA_033792695  ...         0.0220          0.0381
+
+[5 rows x 8 columns]
+Pearson: 0.6678949752041462, R^2: 0.44608369790294705
+Slope: SCC 0.3646393063514791
+Is there any correlation? p-value=0.00015262136769972592
+Negative correlation? p-value=0.9999236893161502
+Positive correlation? p-value=7.631068384986296e-05
+AI_mummer vs default.out
+             file1          file2  ...  Error_fastani  Error_hypergen
+10   GCA_000009765  GCA_005406005  ...        -0.0039          0.3463
+11   GCA_000009765  GCA_005405965  ...         0.0029          0.3314
+95   GCA_000010605  GCA_009866455  ...         0.0228          0.0134
+136  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0682
+188  GCA_000091305  GCA_033792695  ...         0.0220          0.0381
+
+[5 rows x 8 columns]
+Pearson: 0.8758722895933669, R^2: 0.7671522676775269
+Slope: SCC 0.8734279760200663
+Is there any correlation? p-value=2.4683111864596215e-33
+Negative correlation? p-value=1.0
+Positive correlation? p-value=1.2341555932298108e-33
+Error_fastani vs Error_default.out
+             file1          file2  ...  Error_fastani  Error_hypergen
+10   GCA_000009765  GCA_005406005  ...        -0.0039          0.3463
+11   GCA_000009765  GCA_005405965  ...         0.0029          0.3314
+95   GCA_000010605  GCA_009866455  ...         0.0228          0.0134
+136  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0682
+188  GCA_000091305  GCA_033792695  ...         0.0220          0.0381
+
+[5 rows x 8 columns]
+Pearson: 0.8401942512642688, R^2: 0.7059263798575253
+Slope: SCC 0.7170910648918774
+Is there any correlation? p-value=1.601223830135842e-17
+Negative correlation? p-value=1.0
+Positive correlation? p-value=8.00611915067921e-18
+fastani max e: 0.722999999999999
+hypergen max e 0.6751999999999896
+fastani median e: -0.007100000000008322
+hypergen median e 0.02759999999999252
+fastani mean e: -0.036577669902913015
+hypergen mean e 0.015465048543690288
+fastani std e: 0.13414273706855315
+hypergen std e 0.20254934218930762
+s2400-d131072.out
+merging
+{}
+writing results
+Aligned bases vs AI mummer
+             file1          file2  ...  Error_fastani  Error_hypergen
+13   GCA_000009765  GCA_005406005  ...        -0.0039          0.3593
+14   GCA_000009765  GCA_005405965  ...         0.0029          0.3534
+83   GCA_000010605  GCA_009866455  ...         0.0228          0.0154
+100  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0992
+142  GCA_000091305  GCA_033792695  ...         0.0220          0.0421
+
+[5 rows x 8 columns]
+Pearson: 0.39282123808811426, R^2: 0.15430852509307894
+Slope: SCC 0.5137711582514035
+Is there any correlation? p-value=2.4366324246298482e-08
+Negative correlation? p-value=0.9999999878168379
+Positive correlation? p-value=1.2183162123149241e-08
+AI_mummer vs Error fastani
+             file1          file2  ...  Error_fastani  Error_hypergen
+13   GCA_000009765  GCA_005406005  ...        -0.0039          0.3593
+14   GCA_000009765  GCA_005405965  ...         0.0029          0.3534
+83   GCA_000010605  GCA_009866455  ...         0.0228          0.0154
+100  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0992
+142  GCA_000091305  GCA_033792695  ...         0.0220          0.0421
+
+[5 rows x 8 columns]
+Pearson: 0.6572122712124477, R^2: 0.43192796943222395
+Slope: SCC 0.5235003694248422
+Is there any correlation? p-value=1.1840657167797558e-08
+Negative correlation? p-value=0.9999999940796714
+Positive correlation? p-value=5.920328583898779e-09
+AI_mummer vs fastani
+             file1          file2  ...  Error_fastani  Error_hypergen
+13   GCA_000009765  GCA_005406005  ...        -0.0039          0.3593
+14   GCA_000009765  GCA_005405965  ...         0.0029          0.3534
+83   GCA_000010605  GCA_009866455  ...         0.0228          0.0154
+100  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0992
+142  GCA_000091305  GCA_033792695  ...         0.0220          0.0421
+
+[5 rows x 8 columns]
+Pearson: 0.9529107341307933, R^2: 0.9080388672216875
+Slope: SCC 0.9324054712036317
+Is there any correlation? p-value=6.963787219705791e-47
+Negative correlation? p-value=1.0
+Positive correlation? p-value=3.4818936098528954e-47
+AI_mummer vs Error_s2400-d131072.out
+             file1          file2  ...  Error_fastani  Error_hypergen
+13   GCA_000009765  GCA_005406005  ...        -0.0039          0.3593
+14   GCA_000009765  GCA_005405965  ...         0.0029          0.3534
+83   GCA_000010605  GCA_009866455  ...         0.0228          0.0154
+100  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0992
+142  GCA_000091305  GCA_033792695  ...         0.0220          0.0421
+
+[5 rows x 8 columns]
+Pearson: 0.6793141061216362, R^2: 0.4614676547758377
+Slope: SCC 0.3650990099217699
+Is there any correlation? p-value=0.00013856588281715957
+Negative correlation? p-value=0.9999307170585915
+Positive correlation? p-value=6.928294140857979e-05
+AI_mummer vs s2400-d131072.out
+             file1          file2  ...  Error_fastani  Error_hypergen
+13   GCA_000009765  GCA_005406005  ...        -0.0039          0.3593
+14   GCA_000009765  GCA_005405965  ...         0.0029          0.3534
+83   GCA_000010605  GCA_009866455  ...         0.0228          0.0154
+100  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0992
+142  GCA_000091305  GCA_033792695  ...         0.0220          0.0421
+
+[5 rows x 8 columns]
+Pearson: 0.8773747212828854, R^2: 0.7697864015462208
+Slope: SCC 0.8760579692416034
+Is there any correlation? p-value=4.3903014649024005e-34
+Negative correlation? p-value=1.0
+Positive correlation? p-value=2.1951507324512003e-34
+Error_fastani vs Error_s2400-d131072.out
+             file1          file2  ...  Error_fastani  Error_hypergen
+13   GCA_000009765  GCA_005406005  ...        -0.0039          0.3593
+14   GCA_000009765  GCA_005405965  ...         0.0029          0.3534
+83   GCA_000010605  GCA_009866455  ...         0.0228          0.0154
+100  GCA_000091305  GCA_000738715  ...        -0.1051         -0.0992
+142  GCA_000091305  GCA_033792695  ...         0.0220          0.0421
+
+[5 rows x 8 columns]
+Pearson: 0.8434103937496947, R^2: 0.7113410922850151
+Slope: SCC 0.7122585773460752
+Is there any correlation? p-value=2.296833950289523e-17
+Negative correlation? p-value=1.0
+Positive correlation? p-value=1.1484169751447615e-17
+fastani max e: 0.722999999999999
+hypergen max e 0.7121999999999957
+fastani median e: -0.007250000000006196
+hypergen median e 0.026199999999995782
+fastani mean e: -0.040472115384615856
+hypergen mean e 0.014730769230769334
+fastani std e: 0.13927278845219127
+hypergen std e 0.20847840850086363
+max_error
+                   hypergen_file  max_error  ...     MRSSf     MPAEf
+default.out               0.6752    0.08640  ... -0.063745 -0.066258
+s2400-d131072.out         0.7122    0.08995  ... -0.063606 -0.066017
+
+[2 rows x 9 columns]
+MAE
+                   hypergen_file  max_error  ...     MRSSf     MPAEf
+default.out               0.6752    0.08640  ... -0.063745 -0.066258
+s2400-d131072.out         0.7122    0.08995  ... -0.063606 -0.066017
+
+[2 rows x 9 columns]
+MRSS
+                   hypergen_file  max_error  ...     MRSSf     MPAEf
+default.out               0.6752    0.08640  ... -0.063745 -0.066258
+s2400-d131072.out         0.7122    0.08995  ... -0.063606 -0.066017
+
+[2 rows x 9 columns]
+MPAE
+                   hypergen_file  max_error  ...     MRSSf     MPAEf
+default.out               0.6752    0.08640  ... -0.063745 -0.066258
+s2400-d131072.out         0.7122    0.08995  ... -0.063606 -0.066017
+
+[2 rows x 9 columns]

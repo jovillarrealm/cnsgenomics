@@ -1,0 +1,12 @@
+[project]
+name = "error-compare"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.9.2",
+    "pandas>=2.2.3",
+    "pwlf>=2.2.1",
+    "scipy>=1.14.1",
+]
