@@ -39,7 +39,7 @@ def filter_filename(path, filter_str):
 
     filename, extension = os.path.splitext(path)
     filtered_filename = filename + "_" + filter_str
-    return os.path.join(os.path.dirname(path), filtered_filename + extension)
+    return filtered_filename + extension
 
 
 def apply_filter(csv_path):
@@ -52,6 +52,7 @@ def apply_filter(csv_path):
         & ((df["N50"].gt(50_000)) & (df["N_percentage"].lt(0.87)))
     ]
     new_filename = filter_filename(csv_path, "filtered")
+    print(new_filename)
     df.to_csv(new_filename, sep=";", index=False)
     return df
 

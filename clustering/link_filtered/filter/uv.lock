@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pandas" }]
+requires-dist = [{ name = "pandas", specifier = ">=2.2.3" }]
 
 [[package]]
 name = "numpy"
