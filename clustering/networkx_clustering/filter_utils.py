@@ -65,3 +65,8 @@ def to_dict(df: pd.DataFrame):
             N_percentage: rec[N_percentage],
         }
     return dict_f
+
+if __name__ == "__main__":
+    import sys
+    stats_file_name = sys.argv[1]
+    apply_filter(stats_file_name)
