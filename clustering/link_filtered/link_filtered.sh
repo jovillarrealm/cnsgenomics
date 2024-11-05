@@ -4,6 +4,7 @@
 # $2 is the directory where GENOMIC is 
 out_dir=$(realpath "${2}")"/"
 output_dir="$out_dir""GENOMIC_f"
+mkdir -p "$out_dir" "$output_dir"
 
 extract_code(){
     awk -F';' '{print $1}'
