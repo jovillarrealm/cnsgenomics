@@ -60,7 +60,7 @@ def write_clusters(csv_file_name):
                 )
                 connected_writer = csv.writer(f, delimiter=";")
                 clusters = sorted(clusters, key=len, reverse=True)
-                isolates = iter(tuple(isolate)[0] for isolate in isolates)
+                isolates = tuple(tuple(isolate)[0] for isolate in isolates)
                 for cluster in clusters:
                     connected_writer.writerow(cluster)
                 g.write('\n'.join(isolates))

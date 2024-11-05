@@ -33,28 +33,29 @@ def filter_filename(path, filter_str):
 
     filename, extension = os.path.splitext(path)
     filtered_filename = filename + "_" + filter_str
-    return os.path.join(os.path.dirname(path), filtered_filename + extension)
+    return filtered_filename + extension
 
 
 def apply_filter(csv_path):
     df: pd.DataFrame = pd.read_csv(csv_path, sep=";")
-    df = df[
-        (assembly_length > 4_000_000)
-        and (number_of_sequences > 1880)
-        and (N50 > 50_000)
-        and (N_percentage < 0.87)
-    ]
+    print(df.dtypes)
     print(df.head())
-    new_filename = filter_filename(csv_path)
-    df.to_csv(new_filename, sep=";")
+    df = df[
+        (df["assembly_length"].gt(4_000_000))
+        & (df["number_of_sequences"].lt(1880))
+        & ((df["N50"].gt(50_000)) & (df["N_percentage"].lt(0.87)))
+    ]
+    new_filename = filter_filename(csv_path, "filtered")
+    print(new_filename)
+    df.to_csv(new_filename, sep=";", index=False)
     return df
 
-
 def to_dict(df: pd.DataFrame):
-    dict_f = dict()
+    dict_f: dict[str,dict[str,float]] = dict()
     for rec in df.to_records():
         code = extract_code(rec[filename])
         dict_f[code] = {
+            filename: rec[filename],
             assembly_length: rec[assembly_length],
             number_of_sequences: rec[number_of_sequences],
             average_length: rec[average_length],
