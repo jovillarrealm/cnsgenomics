@@ -12,7 +12,7 @@ def apply_criteria(candidates:dict):
     """
     if candidates:
         cand_i= candidates.values()
-        max_len = max(candidates.values(), key=lambda x: x['assembly_length'])['assembly_length']
+        max_len = max(cand_i, key=lambda x: x['assembly_length'])['assembly_length']
         appropriate_length_assemblies = tuple(filter(lambda i: i["assembly_length"] > max_len * 0.9, cand_i))
         result = max(appropriate_length_assemblies, key=lambda i: i["N50"])
         return result
@@ -39,11 +39,8 @@ if __name__ == "__main__":
             representatives.append(chosen_genome[filter_utils.filename])
     r_len= len(representatives)
     representatives.extend(isolates)
-    if len(representatives) > r_len:
-        with open("representative_genomes.csv", "w") as g:
-            g.write('\n'.join(representatives))
-    else:
-        raise "NO"
+    with open("representative_genomes.csv", "w") as g:
+        g.write('\n'.join(representatives))
     
 
     

@@ -10,7 +10,7 @@ def create_clusters_with_weights(filename, threshold):
 
     # Open and read the CSV file
     with open(filename, "r") as file:
-        reader = csv.DictReader(file, delimiter=";", fieldnames=["G1", "G2", "ANI_HG"])
+        reader = csv.DictReader(file, delimiter="\t", fieldnames=["G1", "G2", "ANI_HG"])
 
         # Add weighted edges to the graph if AverageIdentity is above threshold
         for row in reader:
