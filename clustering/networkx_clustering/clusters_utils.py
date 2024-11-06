@@ -1,4 +1,5 @@
 import networkx as nx
+import os
 import scipy
 import csv
 
@@ -53,8 +54,11 @@ def write_clusters(csv_file_name):
     thresholds = [99.0]
     for threshold in thresholds:
         print(f"Doing {threshold}")
-        with open(f"{threshold}_clusters.csv", "w") as f:
-            with open(f"{threshold}_isolates.csv", "w") as g:
+        filename, _ = os.path.splitext(csv_file_name)
+        clusters_filename = filename + "_" + f"{threshold}_clusters.csv"
+        with open(clusters_filename, "w") as f:
+            isolates_filename=filename + "_" + f"{threshold}_isolates.txt"
+            with open(isolates_filename, "w") as g:
                 G, w_clusters, clusters, isolates = create_clusters_with_weights(
                     csv_file_name, threshold
                 )
