@@ -14,6 +14,5 @@ extract_code(){
 
 tail -n +2 "$1" |
 extract_code |
-tee names.txt |
 xargs -I {} ln "$out_dir"GENOMIC/{} "$output_dir"/{}
 

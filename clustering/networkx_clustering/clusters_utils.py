@@ -1,7 +1,9 @@
 import networkx as nx
 import os
+import sys
 import scipy
 import csv
+import params
 
 
 # Function to create clusters with weighted edges based on threshold
@@ -51,8 +53,8 @@ def create_clusters_with_weights(filename, threshold):
 
 def write_clusters(csv_file_name):
     """It extracts clusters and singletons, writes them to separate files"""
-    thresholds = [99.0]
-    for threshold in thresholds:
+    
+    for threshold in params.thresholds:
         print(f"Doing {threshold}")
         filename, _ = os.path.splitext(csv_file_name)
         clusters_filename = filename + "_" + f"{threshold}_clusters.csv"
@@ -69,3 +71,13 @@ def write_clusters(csv_file_name):
                     connected_writer.writerow(cluster)
                 g.write('\n'.join(isolates))
                 return clusters, isolates
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python script.py <hyper-gen-output-file> <stats-file> ")
+        print("Stats file is filtered again anyway.")
+        print("hyper-gen-output may have been filtered before this step")
+        print("hyper-gen-output is expected to have been filtered before this step.")
+        sys.exit(1)
+    hyper_gen_output_file = sys.argv[1]
+    stats_file_name = sys.argv[2]

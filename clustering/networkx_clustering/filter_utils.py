@@ -1,16 +1,6 @@
 import pandas as pd
 import os
-
-filename = "filename"
-assembly_length = "assembly_length"
-number_of_sequences = "number_of_sequences"
-average_length = "average_length"
-largest_contig = "largest_contig"
-shortest_contig = "shortest_contig"
-N50 = "N50"
-GC_percentage = "GC_percentage"
-total_N = "total_N"
-N_percentage = "N_percentage"
+import params
 
 
 def extract_code(field: str) -> str | None:
@@ -38,35 +28,52 @@ def filter_filename(path, filter_str):
 
 def apply_filter(csv_path):
     df: pd.DataFrame = pd.read_csv(csv_path, sep=";")
-    print(df.dtypes)
-    print(df.head())
     df = df[
-        (df["assembly_length"].gt(4_000_000))
-        & (df["number_of_sequences"].lt(1880))
-        & ((df["N50"].gt(50_000)) & (df["N_percentage"].lt(0.87)))
+        (df[params.assembly_length].gt(params.max_assembly_length))
+        & (df[params.number_of_sequences].lt(params.max_number_of_sequences))
+        & (
+            (df[params.N50].gt(params.max_N50))
+            & (df[params.N_percentage].lt(params.max_N_percentage))
+        )
     ]
     new_filename = filter_filename(csv_path, "filtered")
-    print(new_filename)
     df.to_csv(new_filename, sep=";", index=False)
-    return df
+    return df, new_filename
+
 
 def to_dict(df: pd.DataFrame):
-    dict_f: dict[str,dict[str,float]] = dict()
+    dict_f: dict[str, dict[str, float]] = dict()
     for rec in df.to_records():
-        code = extract_code(rec[filename])
+        code = extract_code(rec[params.filename])
         dict_f[code] = {
-            filename: rec[filename],
-            assembly_length: rec[assembly_length],
-            number_of_sequences: rec[number_of_sequences],
-            average_length: rec[average_length],
-            largest_contig: rec[largest_contig],
-            shortest_contig: rec[shortest_contig],
-            N50: rec[N50],
-            N_percentage: rec[N_percentage],
+            params.filename: rec[params.filename],
+            params.assembly_length: rec[params.assembly_length],
+            params.number_of_sequences: rec[params.number_of_sequences],
+            params.average_length: rec[params.average_length],
+            params.largest_contig: rec[params.largest_contig],
+            params.shortest_contig: rec[params.shortest_contig],
+            params.N50: rec[params.N50],
+            params.N_percentage: rec[params.N_percentage],
         }
     return dict_f
 
+def apply_criteria(candidates: dict) -> str | None:
+    """
+    Appies the following criteria:
+        stray no further than 10% from the max assembly_length
+        get max N50
+    """
+    if candidates:
+        cand_i = candidates.values()
+        max_len = max(cand_i, key=lambda x: x[params.assembly_length])[params.assembly_length]
+        appropriate_length_assemblies = tuple(
+            filter(lambda i: i[params.assembly_length] > max_len * 0.9, cand_i)
+        )
+        result: str = max(appropriate_length_assemblies, key=lambda i: i[params.N50])
+        return result
+
 if __name__ == "__main__":
     import sys
+
     stats_file_name = sys.argv[1]
     apply_filter(stats_file_name)
