@@ -57,7 +57,7 @@ def to_dict(df: pd.DataFrame):
         }
     return dict_f
 
-def apply_criteria(candidates: dict) -> str | None:
+def apply_criteria(candidates: dict) -> dict | None:
     """
     Appies the following criteria:
         stray no further than 10% from the max assembly_length
@@ -69,7 +69,7 @@ def apply_criteria(candidates: dict) -> str | None:
         appropriate_length_assemblies = tuple(
             filter(lambda i: i[params.assembly_length] > max_len * 0.9, cand_i)
         )
-        result: str = max(appropriate_length_assemblies, key=lambda i: i[params.N50])
+        result: dict = max(appropriate_length_assemblies, key=lambda i: i[params.N50])
         return result
 
 if __name__ == "__main__":
