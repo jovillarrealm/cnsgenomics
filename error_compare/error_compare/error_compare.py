@@ -363,11 +363,11 @@ def analyze_results():
             "hypergen_file",
             "max_error",
             "MAE",
-            "MRSS",
+            "RSME",
             "MPAE",
             "max_errorf",
             "MAEf",
-            "MRSSf",
+            "RSMEf",
             "MPAEf",
         ],
         delimiter=";",
@@ -376,7 +376,7 @@ def analyze_results():
     print_results(df, "max_error")
     #print_results(df, "MedianAE")
     print_results(df, "MAE")
-    print_results(df, "MRSS")
+    print_results(df, "RSME")
     print_results(df, "MPAE")
 
 
