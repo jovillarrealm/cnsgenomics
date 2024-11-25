@@ -8,3 +8,4 @@ awk -F'[_.;]' '{print $1 "_" $2}'
 
 tail -n +2 "$1" |
 extract_code > codes.txt
+

@@ -8,10 +8,13 @@ diffs_file="$out_dir""diffs_file"
 tmperlfile="$out_dir""tmperlfile"
 tmprsfile="$out_dir"tmpfile-rs
 
-./count_fasta_cnsg.pl -i 100 "$@" > "$tmperlfile" 2> /dev/null
+scripts_dir="$(dirname "$0")"
+scripts_dir="$(realpath "$scripts_dir")"/
+
+"$scripts_dir"count_fasta_cnsg.pl -i 100 "$@" > "$tmperlfile" 2> /dev/null
 tail -n 13 "$tmperlfile" > "$tmp_dir"tmpfile && mv "$tmp_dir"tmpfile "$tmperlfile"
 
-./rs-count-fasta/target/x86_64-unknown-linux-gnu/release/rs-count-fasta "$@" > "$tmprsfile"
+count-fasta-rs "$@" > "$tmprsfile"
 
 diff -w "$tmperlfile" "$tmprsfile" > "$diff_file"
 
