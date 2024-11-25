@@ -83,7 +83,7 @@ def make_representative_links(representative_file, genomic_dir, threshold):
             dest = os.path.join(output_dir, filename)
             
             # Check if the source file exists
-            if os.path.exists(src):
+            if os.path.exists(src) and not os.path.exists(dest):
                 os.link(src, dest)
             else:
                 print(f"Source file does not exist: {src}")
