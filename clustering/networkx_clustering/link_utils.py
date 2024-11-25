@@ -4,7 +4,7 @@ import params
 def create_hardlinks(stats_file, genomic_dir, threshold):
     # Ensure the paths are absolute
     out_dir = os.path.realpath(genomic_dir)
-    output_dir = os.path.join(out_dir, params.reference_dir_name+threshold)
+    output_dir = os.path.join(out_dir, params.reference_dir_name+str(threshold))
     
     # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
