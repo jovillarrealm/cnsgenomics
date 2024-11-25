@@ -18,10 +18,10 @@ if __name__ == "__main__":
     tsv_file_name = sys.argv[1]
     stats_file_name = sys.argv[2]
     genomic_dir = sys.argv[3]
+    df, filtered_path = filter_utils.apply_filter(stats_file_name)
+    dict_f = filter_utils.to_dict(df)
 
     for clusters, isolates, threshold in clusters_utils.write_clusters(tsv_file_name):
-        df, filtered_path = filter_utils.apply_filter(stats_file_name)
-        dict_f = filter_utils.to_dict(df)
 
         representatives:list[str] = []
 
@@ -33,15 +33,15 @@ if __name__ == "__main__":
                     candidates[genome] = dict_f[genome]
             chosen_genome = filter_utils.apply_criteria(candidates)
             if chosen_genome:
-                chosen_name = filter_utils.extract_code(chosen_genome[params.filename])
+                chosen_name = chosen_genome[params.filename]
                 if chosen_name:
                     representatives.append(chosen_name)
         isolates = tuple(filter(lambda i: filter_utils.extract_code(i) in dict_f, isolates))
         representatives.extend(isolates)
 
-        link_utils.make_filter_links(stats_file_name, genomic_dir, threshold)
 
         filename, _ = os.path.splitext(tsv_file_name)
-        filtered_filename = filename + "_" + str(threshold)+ "represent.txt"
-        with open(filtered_filename, "w") as g:
+        representative_filename = filename + "_" + str(threshold)+ "represent.txt"
+        with open(representative_filename, "w") as g:
             g.write("\n".join(representatives))
+        link_utils.make_representative_links(stats_file_name, genomic_dir, threshold)
