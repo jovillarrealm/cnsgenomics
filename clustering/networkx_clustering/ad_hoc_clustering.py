@@ -44,4 +44,4 @@ if __name__ == "__main__":
         representative_filename = filename + "_" + str(threshold)+ "represent.txt"
         with open(representative_filename, "w") as g:
             g.write("\n".join(representatives))
-        link_utils.make_representative_links(stats_file_name, genomic_dir, threshold)
+        link_utils.make_representative_links(representative_filename, genomic_dir, threshold)
