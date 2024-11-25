@@ -1,7 +1,7 @@
 import networkx as nx
 import os
 import sys
-import scipy
+import scipy  # noqa: F401
 import csv
 import params
 
@@ -70,7 +70,7 @@ def write_clusters(csv_file_name):
                 for cluster in clusters:
                     connected_writer.writerow(cluster)
                 g.write('\n'.join(isolates))
-                return clusters, isolates
+                yield clusters, isolates, threshold
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -81,3 +81,5 @@ if __name__ == "__main__":
         sys.exit(1)
     hyper_gen_output_file = sys.argv[1]
     stats_file_name = sys.argv[2]
+    for _,_,t in write_clusters(hyper_gen_output_file):
+        print(t)

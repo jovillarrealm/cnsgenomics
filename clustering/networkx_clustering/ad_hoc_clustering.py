@@ -18,27 +18,27 @@ if __name__ == "__main__":
     stats_file_name = sys.argv[2]
     genomic_dir = sys.argv[3]
 
-    clusters, isolates = clusters_utils.write_clusters(tsv_file_name)
-    df, filtered_path = filter_utils.apply_filter(stats_file_name)
-    dict_f = filter_utils.to_dict(df)
+    for clusters, isolates, threshold in clusters_utils.write_clusters(tsv_file_name):
+        df, filtered_path = filter_utils.apply_filter(stats_file_name)
+        dict_f = filter_utils.to_dict(df)
 
-    representatives = []
+        representatives = []
 
-    for cluster in clusters:
-        candidates: dict[str] = dict()
-        for genome in cluster:
-            genome = filter_utils.extract_code(genome)
-            if genome in dict_f:
-                candidates[genome] = dict_f[genome]
-        chosen_genome = filter_utils.apply_criteria(candidates)
-        if chosen_genome:
-            representatives.append(chosen_genome)
-    isolates = tuple(filter(lambda i: filter_utils.extract_code(i) in dict_f, isolates))
-    representatives.extend(isolates)
+        for cluster in clusters:
+            candidates: dict[str] = dict()
+            for genome in cluster:
+                genome = filter_utils.extract_code(genome)
+                if genome in dict_f:
+                    candidates[genome] = dict_f[genome]
+            chosen_genome = filter_utils.apply_criteria(candidates)
+            if chosen_genome:
+                representatives.append(chosen_genome)
+        isolates = tuple(filter(lambda i: filter_utils.extract_code(i) in dict_f, isolates))
+        representatives.extend(isolates)
 
-    link_utils.make_filter_links(stats_file_name, genomic_dir)
+        link_utils.make_filter_links(stats_file_name, genomic_dir, threshold)
 
-    filename, _ = os.path.splitext(tsv_file_name)
-    filtered_filename = filename + "_" + "represent.txt"
-    with open(filtered_filename, "w") as g:
-        g.write("\n".join(representatives))
+        filename, _ = os.path.splitext(tsv_file_name)
+        filtered_filename = filename + "_" + str(threshold)+ "represent.txt"
+        with open(filtered_filename, "w") as g:
+            g.write("\n".join(representatives))

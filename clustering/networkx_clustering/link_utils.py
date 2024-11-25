@@ -1,10 +1,10 @@
 import os
 import sys
 import params
-def create_hardlinks(stats_file, genomic_dir):
+def create_hardlinks(stats_file, genomic_dir, threshold):
     # Ensure the paths are absolute
     out_dir = os.path.realpath(genomic_dir)
-    output_dir = os.path.join(out_dir, params.reference_dir_name)
+    output_dir = os.path.join(out_dir, params.reference_dir_name+threshold)
     
     # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -30,7 +30,7 @@ def create_hardlinks(stats_file, genomic_dir):
             else:
                 print(f"Source file does not exist: {src}")
 
-def make_filter_links(stats_file, genomic_dir):
+def make_filter_links(stats_file, genomic_dir,threshold):
 
 
     # Validate the existence of the stats file and genomic directory
@@ -43,7 +43,7 @@ def make_filter_links(stats_file, genomic_dir):
         sys.exit(1)
 
     # Create symlinks
-    create_hardlinks(stats_file, genomic_dir)
+    create_hardlinks(stats_file, genomic_dir, threshold)
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -51,4 +51,5 @@ if __name__ == "__main__":
         sys.exit(1)
     stats_file = sys.argv[1]
     genomic_dir = sys.argv[2]
-    make_filter_links(stats_file, genomic_dir)
+    for threshold in params.thresholds:
+        make_filter_links(stats_file, genomic_dir, threshold)
