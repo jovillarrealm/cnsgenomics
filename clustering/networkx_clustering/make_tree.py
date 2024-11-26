@@ -10,7 +10,7 @@ threshold = "99"
 shuf_file = "L3K10"
 sketch_dir = genomic_dir +"_kssd_sketch"
 phylip_file = "t" + threshold + ".phy"
-newick_file = "t_" + threshold + ".tree"
+newick_file = "t_" + threshold + ".nwk"
 
 conf = {
     "dnj_flag": 1,
