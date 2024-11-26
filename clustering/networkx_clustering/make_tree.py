@@ -8,9 +8,9 @@ threshold = "99"
 
 
 shuf_file = "L3K10"
-sketch_dir = "GENOMIC_s" + threshold
-phylip_file = "t" + threshold + ".phylip"
-newick_file = "tree_" + threshold + ".newick"
+sketch_dir = genomic_dir +"_kssd_sketch"
+phylip_file = "t" + threshold + ".phy"
+newick_file = "t_" + threshold + ".tree"
 
 conf = {
     "dnj_flag": 1,
@@ -23,4 +23,5 @@ kssdtree.shuffle(k=10, l=3, s=6, o=shuf_file)
 #kssdtree.dist(genome_sketch=sketch_dir, output=phylip_file, flag=conf["dnj_flag"])
 #kssdtree.build(phylip=phylip_file, output=newick_file, method=conf["dnj_method"])
 #kssdtree.visualize(newick=newick_file,  mode="r")
-kssdtree.quick(shuf_file=shuf_file+".shuf",genome_files=genomic_dir,output=newick_file,method="dnj")
+kssdtree.quick(shuf_file=shuf_file+".shuf",genome_files=genomic_dir,output=newick_file,method="dnj", mode="r")
+
