@@ -21,7 +21,7 @@ def create_hardlinks(stats_file, genomic_dir, threshold):
             code = parts[0].strip()
 
             # Create the symbolic link
-            src = os.path.join(out_dir, "GENOMIC", code)
+            src = os.path.join(out_dir, "GENOMIC1", code)
             dest = os.path.join(output_dir, code)
             
             # Check if the source file exists
@@ -79,7 +79,7 @@ def make_representative_links(representative_file, genomic_dir, threshold):
             filename = line.strip()
 
             # Create the symbolic link
-            src = os.path.join(out_dir, "GENOMIC", filename)
+            src = os.path.join(out_dir, "GENOMIC1", filename)
             dest = os.path.join(output_dir, filename)
             
             # Check if the source file exists
