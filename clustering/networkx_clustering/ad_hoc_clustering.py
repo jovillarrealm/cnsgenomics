@@ -39,11 +39,12 @@ if __name__ == "__main__":
                 if genome is not None:
                     if genome in dict_f:
                         candidates[genome] = dict_f[genome]
-            chosen_genome = filters.apply_criteria(candidates, preferred_set)
-            if chosen_genome:
-                chosen_name = chosen_genome[params.filename]
-                if chosen_name:
-                    representatives.append(chosen_name)
+            chosen_genomes = filters.apply_criteria(candidates, preferred_set)
+            if chosen_genomes:
+                for chosen_genome in chosen_genomes:
+                    chosen_name = chosen_genome[params.filename]
+                    if chosen_name:
+                        representatives.append(chosen_name)
         isolates = tuple(
             filter(
                 lambda i: filters.extract_code(i) is not None

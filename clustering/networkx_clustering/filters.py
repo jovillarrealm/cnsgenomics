@@ -45,16 +45,13 @@ def to_dict(df: pl.DataFrame):
     return dict_f
 
 
-def apply_criteria(candidates: dict, preferred_set: set | None) -> dict | None:
+def apply_criteria(candidates: dict, preferred_set: set | None) -> list[dict] | None:
     if candidates:
         cand_i = list(candidates.values()) # Convert to list for easier manipulation
         if preferred_set:
             filtered_cand = list(filter(lambda i: extract_code(i[params.filename]) in preferred_set, cand_i))
             if filtered_cand:
-                if len(filtered_cand) == 1:
-                    return filtered_cand[0]  # Return the single element directly
-                elif len(filtered_cand) > 1:
-                    cand_i = filtered_cand
+                return filtered_cand  # Return the single element directly
 
         if not cand_i: # Handle the case where filtered_cand is empty after the filter
             return None
@@ -65,10 +62,8 @@ def apply_criteria(candidates: dict, preferred_set: set | None) -> dict | None:
         )
         if appropriate_length_assemblies: # Check if appropriate_length_assemblies is not empty
             result: dict = max(appropriate_length_assemblies, key=lambda i: i[params.N50])
-            return result
-        else:
-            return None # Return None if no appropriate assemblies are found
-    return None # Return None if the initial candidates dictionary is empty
+            return [result]
+    return None # Return None if the initial candidates dictionary is empty or no appropriate assemblies are found
 
 
 if __name__ == "__main__":
