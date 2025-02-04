@@ -22,9 +22,9 @@ total_N = "total_N"
 N_percentage = "N_percentage"
 
 max_assembly_length = 4_000_000
-max_number_of_sequences = 1_880
+min_number_of_sequences = 1_880
 max_N50 = 50_000
-max_N_percentage = 0.87
+min_N_percentage = 0.87
 
 # For linking
 reference_dir_name = "GENOMIC1_r"

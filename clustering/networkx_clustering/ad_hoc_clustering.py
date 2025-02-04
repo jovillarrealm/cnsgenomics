@@ -1,47 +1,64 @@
 import sys
 import os
-import clusters_utils as clusters_utils
-import filter_utils as filter_utils
-import link_utils
+import clusters
+import filters
+import networkx_clustering.links as links
 import params
+import polars as pl
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
+    if len(sys.argv) <= 4:
         print(
-            "Usage: python script.py <hyper-gen-output-file> <stats-file> <genomic-dir>"
+            "Usage: python script.py <hyper-gen-output-file> <stats-file> <genomic-dir> <preferred-list>"
         )
         print("Stats file is filtered again anyway.")
         print("hyper-gen-output may have been filtered before this step")
         print("hyper-gen-output is expected to have been filtered before this step.")
         sys.exit(1)
-    tsv_file_name = sys.argv[1]
-    stats_file_name = sys.argv[2]
-    genomic_dir = sys.argv[3]
-    df, filtered_path = filter_utils.apply_filter(stats_file_name)
-    dict_f = filter_utils.to_dict(df)
-
-    for clusters, isolates, threshold in clusters_utils.write_clusters(tsv_file_name):
-
-        representatives:list[str] = []
+    hyper_gen_tsv_path: str = sys.argv[1]
+    stats_file_name: str = sys.argv[2]
+    genomic_dir: str = sys.argv[3]
+    if len(sys.argv) == 4:
+        preferred_list = None
+    else:
+        preferred_list = sys.argv[4]
+    df, filtered_path = filters.apply_filter(stats_file_name)
+    dict_f = filters.to_dict(df)
+    if dict_f is None:
+        raise Exception
+    if preferred_list:
+        preferred_set = set(pl.read_csv(preferred_list, separator=",")["GCA"])
+    for clusters, isolates, threshold in clusters.write_clusters(hyper_gen_tsv_path):
+        representatives: list[str] = []
 
         for cluster in clusters:
-            candidates: dict[str] = dict()
+            candidates: dict[str, dict] = dict()
             for genome in cluster:
-                genome = filter_utils.extract_code(genome)
-                if genome in dict_f:
-                    candidates[genome] = dict_f[genome]
-            chosen_genome = filter_utils.apply_criteria(candidates)
+                genome = filters.extract_code(genome)
+                if genome is not None:
+                    if genome in dict_f:
+                        candidates[genome] = dict_f[genome]
+            chosen_genome = filters.apply_criteria(candidates, preferred_set)
             if chosen_genome:
                 chosen_name = chosen_genome[params.filename]
                 if chosen_name:
                     representatives.append(chosen_name)
-        isolates = tuple(filter(lambda i: filter_utils.extract_code(i) in dict_f, isolates))
+        isolates = tuple(
+            filter(
+                lambda i: filters.extract_code(i) is not None
+                and filters.extract_code(i) in dict_f,
+                isolates,
+            )
+        )
         representatives.extend(isolates)
 
-
-        filename, _ = os.path.splitext(tsv_file_name)
-        representative_filename = filename + "_" + str(threshold)+ "represent.txt"
+        filename, _ = os.path.splitext(hyper_gen_tsv_path)
+        representative_filename = filename + "_" + str(threshold) + "represent.txt"
         with open(representative_filename, "w") as g:
             g.write("\n".join(representatives))
-        link_utils.make_representative_links(representative_filename, genomic_dir, threshold)
+        links.make_representative_links(
+            representative_filename, genomic_dir, threshold
+        )
+
+        

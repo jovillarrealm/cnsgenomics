@@ -59,7 +59,7 @@ def make_representative_links(representative_file, genomic_dir, threshold):
         print(f"Error: Genomic directory '{genomic_dir}' does not exist.")
         sys.exit(1)
 
-    # Create symlinks
+    # Create links
     create_hardlinks(representative_file, genomic_dir, threshold)
     
     out_dir = os.path.realpath(genomic_dir)
