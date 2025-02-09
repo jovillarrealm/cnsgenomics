@@ -2,7 +2,7 @@ import sys
 import os
 import clusters
 import filters
-import networkx_clustering.links as links
+import links
 import params
 import polars as pl
 
@@ -39,7 +39,7 @@ if __name__ == "__main__":
                 if genome is not None:
                     if genome in dict_f:
                         candidates[genome] = dict_f[genome]
-            chosen_genomes = filters.apply_criteria(candidates, preferred_set)
+            chosen_genomes = filters.apply_criteria(candidates)
             if chosen_genomes:
                 for chosen_genome in chosen_genomes:
                     chosen_name = chosen_genome[params.filename]
@@ -53,6 +53,8 @@ if __name__ == "__main__":
             )
         )
         representatives.extend(isolates)
+        if preferred_list:
+            representatives=list(set(representatives).union(preferred_set))
 
         filename, _ = os.path.splitext(hyper_gen_tsv_path)
         representative_filename = filename + "_" + str(threshold) + "represent.txt"
