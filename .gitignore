@@ -10,7 +10,6 @@ ncbi_api_key.txt
 **/__pycache__
 **xz
 **out
-**csv
 **sketch
 **xlsx
 **png
@@ -18,3 +17,6 @@ ncbi_api_key.txt
 down/dataformat
 down/datasets
 error_compare/error_compare/__pycache__/error_compare.cpython-312.pyc
+error_compare/default.out.csv
+error_compare/fastani_extracts.csv
+error_compare/mummer.csv

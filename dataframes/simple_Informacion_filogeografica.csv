@@ -1,0 +1,629 @@
+GCA,ESPECIE,País,Coordenadas,Hospedador,Continent,Host
+GCA_002794255,Streptomyces_carminius_TRM_SA0054____,,,soil,,soil
+GCA_016107395,Streptomyces_fildesensis_INACH3013_____,Antarctic,62.20722222 S 58.97444444 W,antarctic soil,Antarctic,soil
+GCA_019890725,Streptomyces_acidipaludis_PLK6-54_____,Thailand,,peat swamp soil,Asia,soil
+GCA_024436035,Streptomyces_humicola_RB6PN25_____,Thailand,,forest soil,Asia,soil
+GCA_029269905,Streptomyces_silvisoli_RB6PN23_____,Thailand,,forest soil,Asia,soil
+GCA_000262345,Streptomyces_xiaopingdaonensis_DUT_180____,China,,marine,Asia,waters
+GCA_001751375,Streptomyces_qinglanensis_SCSIO_M10379____,China,,marine,Asia,waters
+GCA_003265665,Streptomyces_qinglanensis_172205_____,China,,mangrove soil,Asia,soil
+GCA_900111245,Streptomyces_qinglanensis_CGMCC_46825____,China,,,Asia,
+GCA_017676345,Streptomyces_smyrnaeus_DSM_42105____,Turkey,,marine,Europe,waters
+GCA_017676365,Streptomyces_oryzae_S16-07_____,Thailand,,crop,Asia,plant
+GCA_017676385,Streptomyces_spirodelae_DW4-2_____,Thailand,,crop,Asia,plant
+GCA_003323715,Streptomyces_diacarni_LHW51701_____,China,,marine animal,Asia,animal
+GCA_022699385,Streptomyces_tubbatahanensis_DSD3025_____,Philippines,,marine,Asia,waters
+GCA_003323735,Streptomyces_reniochalinae_LHW50302_____,China,,marine animal,Asia,animal
+GCA_024752535,Streptomyces_albus_DSM_40763____,South Korea,,industry,Asia,soil
+GCA_011006355,Streptomyces_albus_CAS922_____,Argentina,38.666639 S 62.234444 W,industry,South America,soil
+GCA_013302895,Streptomyces_albus_subsp_chlorinus_NRRL_B-24108__,USA,,marine,North America,waters
+GCA_006539165,Streptomyces_cacaoi_NBRC_12748____,Nigeria,,crop,Africa,plant
+GCA_008312845,Streptomyces_cacaoi_OABC16_____,China,15.4337 N 112.00873 E,marine,Asia,waters
+GCA_0286571953,Streptomyces_iconiensis_DSM_42109____,Germany,,,Europe,
+GCA_001751365,Streptomyces_abyssalis_SCSIO_10390____,China,20.91 N 109.21 E,marine animal,Asia,animal
+GCA_015910445,Streptomyces_bathyalis_ASO4wet_____,Atlantic Ocean,,marine animal,Atlantic Ocean,animal
+GCA_022524345,Streptomyces_marispadix_M600PL45_2____,Portugal,,soil,Europe,soil
+GCA_001751245,Streptomyces_oceani_SCSIO_02100____,China,,marine,Asia,waters
+GCA_003355155,Streptomyces_armeniacus_ATCC_15676____,Armenia,40.11 N 44.31 E,soil,Europe,soil
+GCA_025165795,Streptomyces_gossypii_N2-109_____,China,,crop,Asia,plant
+GCA_002843305,Streptomyces_barkulensis_RC_1831____,China,,,Asia,
+GCA_017114865,Streptomyces_verrucosisporus_CPB1-1_____,Thailand,,marine,Asia,waters
+GCA_029846675,Streptomyces_chitinivorans_RC1832_____,India,,freshwater,Asia,waters
+GCA_023614295,Streptomyces_radiopugnans_MRC003_____,Sudan,"
+15.508194 N 32.621639 E",human patient,Africa,human
+GCA_009709575,Streptomyces_taklimakanensis_TRM43335_____,China,,soil,Asia,soil
+GCA_013618545,Streptomyces_alkaliterrae_OF8_____,India,,soil,Asia,soil
+GCA_0181011252,Streptomyces_tardus_P38-E01_____,Norway,,marine,Europe,waters
+GCA_014779715,Streptomyces_chumphonensis_KK1-2_____,Thailand,,marine,Asia,waters
+GCA_021216675,Streptomyces_gobiensis_1_25____,China,,desert soil,Asia,soil
+GCA_000719135,Streptomyces_avicenniae_NRRL_B-24776____,China,,rhizosphere,Asia,soil
+GCA_003626535,Streptomyces_hoynatensis_KCTC_29097____,Turkey,,marine,Europe,waters
+GCA_002128305,Streptomyces_marincola_SCSIO_03032____,India,9.988 N 87.995 E,marine,Asia,waters
+GCA_020410765,Streptomyces_marincola_SCSIO_64649____,China,18.12 N 109.28 E,marine animal,Asia,animal
+GCA_003626575,Streptomyces_radicis_DS1-2_____,Thailand,,rhizoplane,Asia,soil
+GCA_003696235,Streptomyces_triticirhizae_NEAU-YY642_____,China,,soil,Asia,soil
+GCA_0063349952,Streptomyces_mimosae_3MP-10_____,Thailand,,rhizoplane,Asia,soil
+GCA_006335015,Streptomyces_sedi_JCM_16909____,China,,rhizoplane,Asia,soil
+GCA_0009937853,Streptomyces_xiamenensis_MCCC_1A01550____,China,23.55 N 117.25 E,mangrove,Asia,waters
+GCA_013364095,Streptomyces_harbinensis_NA02264_____,China,,marine,Asia,waters
+GCA_024761905,Streptomyces_ginkgonis_KM-1-2_____,China,,plant,Asia,plant
+GCA_012033735,Streptomyces_lonarensis_NCL716_____,India,,saline lagoons,Asia,waters
+GCA_012034385,Streptomyces_spiramenti_5675061_____,Pacific Ocean,,marine,Pacific Ocean,waters
+GCA_009604385,Streptomyces_smaragdinus_RB5_____,South Africa,25.74305556 S 28.26083333 E,animal,Africa,animal
+GCA_011044975,Streptomyces_coryli_A7024_____,Turkey,,rhizosphere,Europe,soil
+GCA_020400605,Streptomyces_aculeolatus_DSM_41644____,Japan,35.41099 N 133.39700 E,soil,Asia,soil
+GCA_0002207052,Streptomyces_xinghaiensis_S187_____,China,,marine,Asia,waters
+GCA_0031223452,Streptomyces_xinghaiensis_OlgR_____,Russia,,soil,Asia,soil
+GCA_036006205,Streptomyces_xinghaiensis_NBC_01215____,Denmark,55.18503 N 8.56022 E,freshwater,Europe,waters
+GCA_012034935,Streptomyces_zingiberis_PLAI_1-29____,Thailand,,plant endophyte,Asia,plant
+GCA_009735685,Streptomyces_lycii_TRM_66187____,China,,plant,Asia,plant
+GCA_023703325,Streptomyces_meridianus_MTZ31_____,Portugal,,soil,Europe,soil
+GCA_0001478153,Streptomyces_violaceusniger_Tu_4113_Tu_4113__,,,soil,,soil
+GCA_030291795,Streptomyces_antimycoticus_FIM95-F1_____,China,,marine,Asia,waters
+GCA_005405925,Streptomyces_antimycoticus_NBRC_12839____,,,compost soil,,soil
+GCA_009936315,Streptomyces_antimycoticus_NBRC_100767____,,,soil,,soil
+GCA_018069625,Streptomyces_yatensis_DSM_41771____,South Korea,,,Asia,
+GCA_0009686852,Streptomyces_antioxidans_MUSC_164____,Malaysia,,mangrove,Asia,waters
+LAB1.9,Strepto231_500up______,Spain,,soil,Europe,soil
+GCA_016741935,Streptomyces_endocoffeicus_CA3R110_____,Thailand,,rhizosphere,Asia,soil
+GCA_024505145,Streptomyces_rugosispiralis_RCU-064_____,Thailand,,peat swamp soil,Asia,soil
+GCA_010892295,Streptomyces_rhizosphaericus_0250_____,China,,soil,Asia,soil
+GCA_017942185,Streptomyces_rhizosphaericus_DSM_41760____,Indonesia,,,Asia,
+GCA_018138705,Streptomyces_indonesiensis_DSM_41759____,South Korea,,,Asia,
+GCA_018138715,Streptomyces_asiaticus_DSM_41761____,South Korea,,,Asia,
+GCA_019059395,Streptomyces_cangkringensis_DSM_41769____,South Korea,,,Asia,
+GCA_002591335,Streptomyces_malaysiensis_DSM_4137____,Germany,,soil,Europe,soil
+GCA_002891865,Streptomyces_malaysiensis_F913_____,China,,soil,Asia,soil
+GCA_013345665,Streptomyces_samsunensis_SA31_____,Thailand,,soil,Asia,soil
+GCA_015689475,Streptomyces_solisilvae_HNM0141_____,China,18.57 N 109.03 E,island,Asia,soil
+GCA_011800555,Streptomyces_malaysiensis_DSM_14702____,Germany,,soil,Europe,soil
+GCA_024519315,Streptomyces_samsunensis_DSM_42010____,Germany,,soil,Europe,soil
+GCA_001705785,Streptomyces_hygroscopicus_subsp_hygroscopicus_OsiSh-2___,China,28.4196 N 114.0287 E,crop,Asia,plant
+GCA_021600165,Streptomyces_hygroscopicus_N11-34_____,Japan,,marine,Asia,waters
+GCA_030268605,Streptomyces_hygroscopicus_subsp_hygroscopicus_NBRC_12859__,USA,,soil,North America,soil
+GCA_016741875,Streptomyces_coffeae_CA1R205_____,Thailand,,rhizosphere,Asia,soil
+GCA_003721215,Streptomyces_botrytidirepellens_NEAU-LD23_____,China,,soil,Asia,soil
+GCA_025908395,Streptomyces_milbemycinicus_SIPI-054_____,China,,soil,Asia,soil
+GCA_013364335,Streptomyces_buecherae_NA00687_____,China,,,Asia,
+GCA_014295035,Streptomyces_buecherae_AC541_____,USA,,animal,North America,animal
+GCA_019049225,Streptomyces_buecherae_AC564_RSS886____,USA,,animal,North America,animal
+GCA_000719265,Streptomyces_roseoverticillatus_NRRL_B-3500____,Italy,,soil,Europe,soil
+GCA_021538775,Streptomyces_roseoverticillatus_A47_____,Brazil,16.26 S 49.24 W,cerrado soil,South America,soil
+GCA_003626645,Streptomyces_klenkii_KCTC_29202____,Turkey,,marine,Europe,waters
+GCA_001445655,Streptomyces_roseifaciens_MBT76_____,China,34.0578 N 109.37750000 E,forest soil,Asia,soil
+GCA_013394065,Streptomyces_rectiverticillatus_B15-08_____,USA,,soil,North America,soil
+GCA_024519335,Streptomyces_telluris_AA8_____,Thailand,,garden soil,Asia,soil
+GCA_002192455,Streptomyces_albireticuli_MDJK11_____,China,,rhizosphere,Asia,soil
+GCA_021228305,Streptomyces_albireticuli_NRRL_B1670_type_B__,USA,37.84075116 N 122.29017615 W,,North America,
+GCA_002891295,Streptomyces_eurocidicus_ATCC_27428____,Japan,,soil,Asia,soil
+USAL_PACBIO,StreptoREB_contigs______,Spain,,air,Europe,air
+GCA_003391135,Streptomyces_olivoreticuli_subsp_olivoreticuli_ATCC_31159__,Japan,,soil,Asia,soil
+GCA_030490905,Streptomyces_olivoreticuli_ZZ-21_____,China,,soil,Asia,soil
+GCA_014648835,Streptomyces_netropsis_JCM_4063____,China,,,Asia,
+Streptomyces_USAL,CANU_lbl042_1contigs_____,Spain,,air,Europe,air
+GCA_002727115,Streptomyces_cinnamoneus_ATCC_21532____,Japan,43.0784 N 141.3570 E,soil,Asia,soil
+GCA_002939475,Streptomyces_cinnamoneus_DSM_41675____,Japan,,soil,Asia,soil
+GCA_003970715,Streptomyces_luteoverticillatus_CGMCC_15060____,China,,marine,Asia,waters
+GCA_020093395,Streptomyces_griseocarneus_CGMCC41088_____,,,soil,,soil
+GCA_020328095,Streptomyces_sichuanensis_SCA3-4_____,China,,rhizosphere,Asia,soil
+GCA_001187435,Streptomyces_caatingaensis_CMAA_1322____,Brazil,5.55337 S 39.31444 W,forest soil,South America,soil
+GCA_009208535,Streptomyces_mobaraensis_US-43_____,China,,soil,Asia,soil
+GCA_017916255,Streptomyces_mobaraensis_NBRC_13819_DSM_40847_DSM_40847,China,,soil,Asia,soil
+GCA_020099395,Streptomyces_mobaraensis_DSM_40587____,China,30.40 N 120.52 E,soil,Asia,soil
+GCA_020037025,Streptomyces_huiliensis_SCA2-4_____,China,,rhizosphere,Asia,soil
+GCA_003121295,Streptomyces_orinoci_NRRL_B-3379____,,,soil,,soil
+GCA_013030945,Streptomyces_morookaense_DSM_40503____,,,soil,,soil
+GCA_0002808652,Streptomyces_auratus_AGR0001_AGR0001____,China,,soil,Asia,soil
+GCA_021538815,Streptomyces_sioyaensis_A5_____,Brazil,16.26 S 49.24 W,cerrado soil,South America,soil
+GCA_004122735,Streptomyces_sioyaensis_DSM_40032____,Germany,,soil,Europe,soil
+GCA_023502025,Streptomyces_kronopolitis_6G-OA-10_____,China,,rhizoplane,Asia,soil
+GCA_0008297152,Streptomyces_lydicamycinicus_TP-A0598_____,Japan,,marine,Asia,waters
+GCA_023702105,Streptomyces_lydicamycinicus_MMS22-DDSA8_____,South Korea,36.337352 N 127.437178 E,soil,Asia,soil
+GCA_008704855,Streptomyces_platensis_ATCC_23948____,,,soil,,soil
+GCA_009811575,Streptomyces_glebosus_NBRC_13786____,,,soil,,soil
+GCA_036079075,Streptomyces_platensis_NBC_00375____,Germany,,grass soil,Europe,soil
+GCA_036347175,Streptomyces_platensis_NBC_00734____,USA,,garden,North America,soil
+GCA_009811635,Streptomyces_tubercidicus_NBRC_13090____,Japan,,soil,Asia,soil
+GCA_035979555,Streptomyces_tubercidicus_NBC_01297____,Denmark,56.8878 N 9.0964 E,soil,Europe,soil
+GCA_036013785,Streptomyces_tubercidicus_NBC_00475____,Denmark,,soil,Europe,soil
+GCA_003994375,Streptomyces_lydicus_WYEC_108____,USA,41.82 N 71.40 W,soil,North America,soil
+GCA_004125275,Streptomyces_lydicus_SW_ACT1____,United Kingdom,,,Europe,
+GCA_027497475,Streptomyces_libani_subsp_libani_DSM_40555__,Lebanon,,soil,Asia,soil
+GCA_026344195,Streptomyces_libani_NEAU-BS7_____,China,,soil,Asia,soil
+GCA_027626975,Streptomyces_nigrescens_DSM_40276____,,,soil,,soil
+GCA_036013815,Streptomyces_decoyicus_NBC_00472____,Denmark,,garden,Europe,soil
+GCA_025252265,Streptomyces_angustmyceticus_CQUSa03_____,China,,soil,Asia,soil
+GCA_036178885,Streptomyces_caniferus_NBC_00270____,Germany,,grass soil,Europe,soil
+GCA_036226425,Streptomyces_caniferus_NBC_01256____,Denmark,55.62394 N 9.84150 E,forest soil,Europe,soil
+GCA_003389455,Streptomyces_inhibens_NEAU-D10_____,China,,soil,Asia,soil
+GCA_022221585,Streptomyces_inhibens_NRRL30439_____,Australia,,,Oceania,
+GCA_001729485,Streptomyces_lydicus_103_____,China,,,Asia,
+GCA_001984445,Streptomyces_lydicus_GS93_____,USA,,soil,North America,soil
+GCA_024349765,Streptomyces_nigrescens_HEK616_____,Japan,,soil,Asia,soil
+GCA_026153355,Streptomyces_endophytica_HNM0140_____,China,18.57 N 109.03 E,crop,Asia,plant
+GCA_000695235,Streptomyces_noursei_NK660_____,China,,,Asia,
+GCA_029167025,Streptomyces_noursei_C27_____,China,,soil,Asia,soil
+GCA_016917755,Streptomyces_noursei_A-2-1_____,China,,,Asia,
+GCA_029011865,Streptomyces_yunnanensis_P86_____,China,,plant,Asia,plant
+GCA_023155275,Streptomyces_rhizoryzae_RS10V-4_____,Thailand,,crop,Asia,plant
+GCA_000935125,Streptomyces_natalensis_ATCC_27448____,South Africa,29.37 S 30.23 E,soil,Africa,soil
+GCA_002082195,Streptomyces_gilvosporeus_F607_____,China,,soil,Asia,soil
+GCA_001294335,Streptomyces_chattanoogensis_NRRL_ISP-5002____,USA,,soil,North America,soil
+GCA_005048155,Streptomyces_piniterrae_jys28_____,China,,rhizosphere,Asia,soil
+GCA_023277745,Streptomyces_halobius_3_2____,China,,freshwater,Asia,waters
+GCA_002261115,Streptomyces_kasugaensis_BCRC_12349____,Japan,,soil,Asia,soil
+GCA_020564935,Streptomyces_pinistramenti_SF28_____,Poland,,soil,Europe,soil
+GCA_004196335,Streptomyces_rimosus_M527_____,China,,rhizosphere,Asia,soil
+GCA_006229535,Streptomyces_rimosus_WT5260_____,Slovenia,,,Europe,
+GCA_008634025,Streptomyces_albofaciens_JCM_4342_ATCC_23873__,South Korea,,soil,Asia,soil
+GCA_003865135,Streptomyces_chrestomyceticus_JCM_4735_NBRC_13444__,,,soil,,soil
+GCA_036562025,Streptomyces_chrestomyceticus_ADP4_____,India,,desert soil,Asia,soil
+GCA_003865155,Streptomyces_paromomycinus_NBRC_15454____,Colombia,,soil,South America,soil
+GCA_000717745,Streptomyces_violens_NRRL_ISP-5597____,Armenia,,soil,Europe,soil
+GCA_020024005,Streptomyces_purpurogeneiscleroticus_DSM_43156____,,,soil,,soil
+GCA_019389835,Streptomyces_griseus_subsp_griseus_30___,United Kingdom,,soil,Europe,soil
+GCA_020783455,Streptomyces_anulatus_YINM00001_____,China,,plant,Asia,plant
+GCA_036346915,Streptomyces_anulatus_NBC_00502____,Denmark,,soil,Europe,soil
+GCA_036227625,Streptomyces_anulatus_NBC_01437____,Denmark,56.95867 N 8.38231 E,grass soil,Europe,soil
+GCA_026340455,Streptomyces_griseus_NBC_01345____,Denmark,,compost soil,Europe,soil
+GCA_000718455,Streptomyces_globisporus_subsp_globisporus_NRRL_B-2709__,,,soil,,soil
+GCA_032121415,Streptomyces_parvus_F-G-2_____,China,,soil,Asia,soil
+GCA_000721685,Streptomyces_mediolani_NRRL_WC-3934____,Italy,,soil,Europe,soil
+GCA_002154385,Streptomyces_albovinaceus_NRRL_B-2566____,Russia,,soil,Asia,soil
+GCA_030077645,Streptomyces_pakalii_ENCB-J15_____,Mexico,,soil,North America,soil
+GCA_024380135,Streptomyces_parvus_PH33_____,China,,marine,Asia,waters
+GCA_016901035,Streptomyces_durocortorensis_RHZ10_____,France,49.25 N 4.033 E,rhizosphere,Europe,soil
+GCA_016906265,Streptomyces_californicus_FDAARGOS_1210____,Germany,,,Europe,
+GCA_016906185,Streptomyces_californicus_FDAARGOS_1209____,Germany,,,Europe,
+GCA_016906245,Streptomyces_californicus_FDAARGOS_1213____,Germany,,,Europe,
+GCA_002082175,Streptomyces_violaceoruber_S21_____,China,,marine,Asia,waters
+GCA_021538875,Streptomyces_violaceoruber_A36_____,Brazil,16.26 S 49.24 W,cerrado soil,South America,soil
+GCA_036227005,Streptomyces_microflavus_NBC_01684____,Netherlands,,compost soil,Europe,soil
+GCA_013364315,Streptomyces_microflavus_NA06532_____,China,,soil,Asia,soil
+GCA_036010585,Streptomyces_microflavus_NBC_01194____,Denmark,56.09636 N 9.77494 E,freshwater,Europe,waters
+GCA_033109485,Streptomyces_cyaneofuscatus_89-2-2_____,China,,soil,Asia,soil
+GCA_035578105,Streptomyces_cyaneofuscatus_NEB1061_____,,,soil,,soil
+GCA_035950875,Streptomyces_cyaneofuscatus_NBC_01338____,Denmark,,compost soil,Europe,soil
+GCA_008932075,Streptomyces_arboris_TRM68085_____,China,40.32 N 81.32 E,plant,Asia,plant
+Streptomyces_USAL,CANU_lbl050_1contigs_____ RS64,Spain,,insect,Europe,insect
+GCA_002804165,Streptomyces_cavourensis_1AS2a_____,Brazil,,cerrado soil,South America,soil
+GCA_024365045,Streptomyces_cavourensis_F2_____,China,,soil,Asia,soil
+GCA_024297125,Streptomyces_cavourensis_2BA6PG_____,Russia,,saline lagoons,Asia,waters
+GCA_000717025,Streptomyces_atroolivaceus_NRRL_ISP-5137____,,,soil,,soil
+GCA_016804005,Streptomyces_pratensis_S10_____,China,,plant,Asia,plant
+GCA_001700505,Streptomyces_mutomycini_NRRL_B-65393____,Russia,,soil,Asia,soil
+GCA_016745505,Streptomyces_silvae_For3_____,France,48.44 N 6.21 E,forest soil,Europe,soil
+GCA_036345975,Streptomyces_clavifer_NBC_00558____,Germany,,compost soil,Europe,soil
+GCA_019219635,Streptomyces_halstedii_LGO-A4_____,Brazil,,crop,South America,plant
+GCA_008704555,Streptomyces_nitrosporeus_ATCC_12769____,,,soil,,soil
+GCA_034300035,Streptomyces_atratus_MJM3502_____,South Korea,33.4890 N 126.4983 E,island,Asia,soil
+GCA_026342895,Streptomyces_atratus_NBC_00141____,Denmark,55.8706 N 12.4950 E,anthropogenic environment,Europe,soil
+GCA_036250715,Streptomyces_brevispora_NBC_01496____,Denmark,55.70383 N 8.20525 E,plant,Europe,plant
+GCA_030719275,Streptomyces_laculatispora_Mut2_____,Sweden,57.686754 N 11.950152 E,forest soil,Europe,soil
+GCA_019399205,Streptomyces_poriferorum_P01-F02_____,Norway,,marine animal,Europe,animal
+GCA_019399235,Streptomyces_poriferorum_P01-B04_____,Norway,,marine animal,Europe,animal
+GCA_000429085,Streptomyces_flavidovirens_DSM_40150_DSM_40150__,,,soil,,soil
+GCA_001746415,Streptomyces_agglomeratus_6-3-2_____,China,,soil,Asia,soil
+GCA_003719395,Streptomyces_altiplanensis_HST21_____,Chile,20.32861 S 68.83861 W,desert soil,South America,soil
+GCA_028807635,Streptomyces_spiramyceticus_F2R-15_____,China,39.26 N 115.25 E,soil,Asia,soil
+GCA_036227585,Streptomyces_niveus_NBC_01447____,Denmark,56.10483 N 9.68503 E,soil,Europe,soil
+GCA_036229765,Streptomyces_niveus_NBC_01432____,Denmark,55.70383 N 8.20525 E,plant,Europe,plant
+GCA_002009175,Streptomyces_niveus_SCSIO_3406____,China,,marine,Asia,waters
+GCA_000718095,Streptomyces_scopuliridis_NRRL_B-24574____,USA,,soil,North America,soil
+GCA_035917595,Streptomyces_scopuliridis_NBC_01786____,Denmark,55.9978 N 10.5558 E,forest soil,Europe,soil
+GCA_035917755,Streptomyces_scopuliridis_NBC_01771____,Denmark,55.9978 N 10.5558 E,forest soil,Europe,soil
+GCA_035917775,Streptomyces_scopuliridis_NBC_01770____,Denmark,55.9978 N 10.5558 E,forest soil,Europe,soil
+GCA_000981895,Streptomyces_odonnellii_NRRL_B-24891____,Brazil,,soil,South America,soil
+GCA_001700515,Streptomyces_lushanensis_NRRL_B-24994____,China,,soil,Asia,soil
+GCA_003344965,Streptomyces_paludis_GSSD-12_____,China,,soil,Asia,soil
+GCA_003346515,Streptomyces_corynorhini_AC230_____,USA,,animal,North America,animal
+GCA_011694815,Streptomyces_liangshanensis_QMT-12_____,China,,soil,Asia,soil
+GCA_017813245,Streptomyces_montanisoli_MMS17-BM035_____,South Korea,36.18086 N 127.24557 E,soil,Asia,soil
+GCA_003054555,Streptomyces_lunaelactis_MM109_____,Belgium,,soil,Europe,soil
+GCA_013357935,Streptomyces_lunaelactis_MM126_____,Belgium,,soil,Europe,soil
+GCA_001278075,Streptomyces_pristinaespiralis_HCCB_10218____,China,,anthropogenic environment,Asia,soil
+GCA_014070435,Streptomyces_pristinaespiralis_PR11_____,,,anthropogenic environment,,soil
+GCA_025854275,Streptomyces_peucetius_NA0869_____,China,32.05 N 118.29 E,grass soil,Asia,soil
+GCA_014489615,Streptomyces_genisteinicus_CRPJ-33_____,China,,plant,Asia,plant
+GCA_016919245,Streptomyces_zhihengii_YIM_T102____,China,26.86 N 100.25 E,rhizosphere,Asia,soil
+GCA_003932715,Streptomyces_tsukubensis_NRRL_18488____,Japan,,soil,Asia,soil
+GCA_004295505,Streptomyces_tsukubensis_VKM_Ac-2618D____,Russia,,,Asia,
+GCA_007856155,Streptomyces_qinzhouensis_SSL-25_____,China,,soil,Asia,soil
+GCA_015767775,Streptomyces_clavuligerus_F1D7_____,China,,anthropogenic environment,Asia,soil
+GCA_015767895,Streptomyces_clavuligerus_F1D31_____,China,,,Asia,
+GCA_029846775,Streptomyces_chengmaiensis_HNM0663_____,China,19.980261 N 110.083156 E,plant,Asia,plant
+GCA_0004786052,Streptomyces_thermolilacinus_SPC6_____,China,39.3674 N 100.1296 E,rhizosphere,Asia,soil
+GCA_001750785,Streptomyces_rubrolavendulae_MJM4426_____,South Korea,,soil,Asia,soil
+GCA_008704425,Streptomyces_fradiae_ATCC_10745_DSM40063_ATCC_10745_,,,soil,,soil
+GCA_032932555,Streptomyces_fradiae_FIMYZ-003_____,China,20.45 N 119.18 E,marine,Asia,waters
+GCA_032423885,Streptomyces_tamarix_TRM76323_____,China,,rhizosphere,Asia,soil
+GCA_023614315,Streptomyces_sudanensis_SD_504____,Sudan,,human patient,Africa,human
+GCA_024349065,Streptomyces_sudanensis_MRC017_____,Sudan,15.508194 N 32.621639 E,human patient,Africa,human
+GCA_024349205,Streptomyces_somaliensis_MRC001_____,Sudan,15.508194 N 32.621639 E,human patient,Africa,human
+GCA_024349285,Streptomyces_somaliensis_DSM_40738____,Somalia,,human patient,Africa,human
+GCA_001484625,Streptomyces_kanasensis_ZX01_____,China,,forest soil,Asia,soil
+GCA_009739905,Streptomyces_ficellus_NRRL_8067____,Japan,,,Asia,
+GCA_023218175,Streptomyces_lichenis_LCR6-01_____,Thailand,,lichen,Asia,lichen
+GCA_000716445,Streptomyces_wedmorensis_NRRL_3426____,USA,,soil,North America,soil
+GCA_006539185,Streptomyces_gardneri_NBRC_12865____,,,air,,air
+GCA_015710995,Streptomyces_gardneri_ATCC_15439____,Italy,,soil,Europe,soil
+GCA_036035005,Streptomyces_zaomyceticus_NBC_00415____,Germany,,compost soil,Europe,soil
+GCA_035991205,Streptomyces_zaomyceticus_NBC_01228____,Denmark,56.8961 N 9.0731 E,farm soil,Europe,soil
+GCA_001886595,Streptomyces_venezuelae_NRRL_B-65442____,United Kingdom,,,Europe,
+GCA_008639165,Streptomyces_venezuelae_ATCC_10712____,Venezuela,,soil,South America,soil
+GCA_019733325,Streptomyces_lateritius_Z1-26_____,China,,soil,Asia,soil
+GCA_000830005,Streptomyces_vietnamensis_GIMV40001_____,Vietnam,,soil,Asia,soil
+GCA_026427415,Streptomyces_tanashiensis_Kala_____,Germany,,soil,Europe,soil
+GCA_009299385,Streptomyces_cinereoruber_ATCC_19740____,,,soil,,soil
+GCA_008634015,Streptomyces_filamentosus_ATCC_23958____,,,soil,,soil
+GCA_020521255,Streptomyces_hydrogenans_NBRC_13475____,,,soil,,soil
+GCA_030766905,Streptomyces_hydrogenans_KL110B_____,Mexico,18.5 N 89.8 W,soil,North America,soil
+GCA_033764205,Streptomyces_roseolus_NBRC_12816____,China,,soil,Asia,soil
+GCA_001008345,Streptomyces_showdoensis_ATCC_15227____,Japan,,soil,Asia,soil
+GCA_004117935,Streptomyces_roseicoloratus_TRM44457_____,China,,crop,Asia,plant
+GCA_031344995,Streptomyces_roseicoloratus_T14_____,South Korea,,rhizosphere,Asia,soil
+GCA_005517195,Streptomyces_vilmorinianum_YP1_____,China,,soil,Asia,soil
+GCA_003097515,Streptomyces_tirandamycinicus_HNM0039_____,China,,marine animal,Asia,animal
+GCA_026627225,Streptomyces_tirandamycinicus_MCCB_246____,,,marine,,waters
+GCA_003122365,Streptomyces_spongiicola_HNM0071_____,China,18.14 N 109.31 E,marine animal,Asia,animal
+GCA_003402595,Streptomyces_spongiicola_531S_____,Japan,,marine,Asia,waters
+GCA_011766325,Streptomyces_pacificus_CWH03_____,Japan,24.213849 N 124.150448 E,marine,Asia,waters
+GCA_005795905,Streptomyces_marianii_ICN19_____,India,,marine,Asia,waters
+GCA_022647665,Streptomyces_formicae_1H-GS9_____,China,,animal,Asia,animal
+GCA_000717655,Streptomyces_katrae_NRRL_B-16271____,Hungary,,rhizosphere,Europe,soil
+GCA_008704935,Streptomyces_vinaceus_ATCC_27476____,,,soil,,soil
+GCA_020639365,Streptomyces_flavotricini_NGL1_____,,,rhizosphere,,soil
+GCA_027942015,Streptomyces_goshikiensis_CGMCC_41796____,China,,,Asia,
+GCA_036010625,Streptomyces_goshikiensis_NBC_01191____,Denmark,55.02439 N 10.84336 E,forest soil,Europe,soil
+GCA_000720455,Streptomyces_virginiae_NRRL_ISP-5094____,USA,,soil,North America,soil
+Streptomyces_USAL,216_contigs______,Spain,,soil,Europe,soil
+GCA_001953875,Streptomyces_amritsarensis_MTCC_11845____,India,,soil,Asia,soil
+GCA_001005295,Streptomyces_yangpuensis_fd2-tb_____,China,31.30 N 121.51 E,grass soil,Asia,soil
+GCA_024666385,Streptomyces_yangpuensis_CM253_____,China,,plant,Asia,plant
+GCA_008642275,Streptomyces_venezuelae_ATCC_21018____,,,soil,,soil
+GCA_036013835,Streptomyces_nojiriensis_NBC_00471____,Denmark,,plant,Europe,plant
+GCA_030440515,Streptomyces_xanthophaeus_GA114_Liu____,China,,soil,Asia,soil
+GCA_016755875,Streptomyces_spororaveus_NBRC_15456____,,,soil,,soil
+GCA_023838445,Streptomyces_spororaveus_SC263_____,Taiwan,,mountain soil,Asia,soil
+GCA_035917955,Streptomyces_virginiae_NBC_01758____,Denmark,55.8583 N 11.9772 E,soil,Europe,soil
+GCA_036173085,Streptomyces_virginiae_NBC_00288____,Denmark,55.8714 N 12.4942 E,soil,Europe,soil
+GCA_036193325,Streptomyces_virginiae_NBC_00248____,Denmark,55.7717 N 12.5011 E,grass soil,Europe,soil
+GCA_001746425,Streptomyces_subrutilus_10-1-1_____,,,soil,,soil
+GCA_016755895,Streptomyces_xanthophaeus_NBRC_12829____,,,soil,,soil
+GCA_035959875,Streptomyces_subrutilus_NBC_01325____,Denmark,56.1414 N 9.3911 E,grass soil,Europe,soil
+GCA_000718155,Streptomyces_lavendulae_subsp_lavendulae_NRRL_B-2774__,,,soil,,soil
+GCA_018255875,Streptomyces_lavendulae_subsp_lavendulae_Del-LP___,Slovakia,,anthropogenic environment,Europe,soil
+GCA_002028425,Streptomyces_katrae_S3_____,USA,,soil,North America,soil
+GCA_030238025,Streptomyces_goshikiensis_JCM_4640____,India,,soil,Asia,soil
+GCA_030269045,Streptomyces_lavendulae_subsp_lavendulae_NBRC_3146__,Japan,,soil,Asia,soil
+GCA_003325375,Streptomyces_globosus_LZH-48_____,China,,soil,Asia,soil
+GCA_008642295,Streptomyces_venezuelae_ATCC_21782____,USA,,soil,North America,soil
+GCA_020532625,Streptomyces_antimicrobicus_SMC_277____,Thailand,,soil,Asia,soil
+GCA_020532645,Streptomyces_bambusae_T110_____,South Korea,,soil,Asia,soil
+GCA_003627815,Streptomyces_hundungensis_BH38_____,South Korea,36.867056 N 129.051167 E,soil,Asia,soil
+GCA_036541015,Streptomyces_xanthochromogenes_WY144_____,China,42.3134 N 125.4285 E,soil,Asia,soil
+GCA_020521295,Streptomyces_violascens_NBRC_12920____,,,soil,,soil
+GCA_036226805,Streptomyces_melanogenes_NBC_00668____,Denmark,55.78803 N 12.51994 E,rhizosphere,Europe,soil
+GCA_000698945,Streptomyces_wadayamensis_A23_____,Brazil,,crop,South America,plant
+GCA_001704195,Streptomyces_sampsonii_KJ40_____,China,,rhizosphere,Asia,soil
+GCA_004195965,Streptomyces_albidoflavus_Ma1_____,Costa Rica,,animal,North America,animal
+GCA_015321285,Streptomyces_albidoflavus_ANT_B131____,Antarctic,,marine animal,Antarctic,animal
+GCA_003428925,Streptomyces_koyangensis_VK-A60T_____,South Korea,,soil,Asia,soil
+GCA_016803985,Streptomyces_koyangensis_SCSIO_5802____,China,,marine,Asia,waters
+GCA_011170105,Streptomyces_rutgersensis_NBRC_12819____,,,soil,,soil
+GCA_014216335,Streptomyces_rutgersensis_NBH77_____,Antarctic,66.41138889 S 110.65833333 E,soil,Antarctic,soil
+GCA_009296025,Streptomyces_tsukubensis_AT3_____,China,,forest soil,Asia,soil
+GCA_003429565,Streptomyces_triticagri_NEAU-YY421_____,China,,soil,Asia,soil
+GCA_009739465,Streptomyces_apocyni_TRM_66233____,China,,plant,Asia,plant
+GCA_011044995,Streptomyces_mesophilus_YC504_____,Turkey,,freshwater,Europe,waters
+GCA_014493765,Streptomyces_polyasparticus_TRM66268-LWL_____,China,,soil,Asia,soil
+GCA_002189675,Streptomyces_alboflavus_MDJK44_____,China,,rhizosphere,Asia,soil
+GCA_000720475,Streptomyces_aureocirculatus_NRRL_ISP-5386____,Russia,,soil,Asia,soil
+GCA_009755605,Streptomyces_typhae_p1417_____,China,,plant,Asia,plant
+GCA_007363395,Streptomyces_spectabilis_NRRL_2792____,USA,,soil,North America,soil
+GCA_008704795,Streptomyces_spectabilis_ATCC_27465____,,,soil,,soil
+GCA_022698305,Streptomyces_spectabilis_KCTC9218_____,South Korea,,forest soil,Asia,soil
+GCA_001418325,Streptomyces_atriruber_NRRL_B-24165____,USA,,animal,North America,animal
+GCA_001419745,Streptomyces_silaceus_NRRL_B-24166____,USA,,animal,North America,animal
+GCA_001418465,Streptomyces_kanamyceticus_NRRL_B-2535____,Japan,,,Asia,
+GCA_008704495,Streptomyces_kanamyceticus_ATCC_12853____,,,soil,,soil
+GCA_001418385,Streptomyces_alboniger_NRRL_B-1832____,USA,,,North America,
+GCA_008704395,Streptomyces_alboniger_ATCC_12461____,,,soil,,soil
+GCA_021028635,Streptomyces_huasconensis_D23_____,China,,desert soil,Asia,soil
+GCA_001975025,Streptomyces_alfalfae_ACCC40021_____,China,,rhizosphere,Asia,soil
+GCA_018141485,Streptomyces_alfalfae_XN-04_____,China,,rhizosphere,Asia,soil
+GCA_031178535,Streptomyces_alfalfae_RM46_bin007____,China,44.89 N 86.31 E,rhizosphere,Asia,soil
+GCA_016128295,Streptomyces_alfalfae_Men-myco-93-63_____,USA,,crop,North America,plant
+GCA_023498005,Streptomyces_durmitorensis_MS405_____,China,,soil,Asia,soil
+GCA_014621695,Streptomyces_xanthii_CRXT-Y-14_____,China,,phyllosphere,Asia,plant
+GCA_024448165,Streptomyces_longispororuber_PBR1_____,India,,soil,Asia,soil
+GCA_035616105,Streptomyces_kunmingensis_DSM_41681____,China,21.624 N 108.908 E,soil,Asia,soil
+GCA_035798155,Streptomyces_endophyticus_YIM65594_____,China,24.01 N 100.39 E,rhizosphere,Asia,soil
+GCA_026274175,Streptomyces_beihaiensis_GXMU-J5_____,China,21.458651 N 109.27005 E,soil,Asia,soil
+GCA_020616555,Streptomyces_longhuiensis_BH-MK-02_____,China,,plant,Asia,plant
+GCA_001905345,Streptomyces_uncialis_DCA2648_____,Canada,,lichen,North America,lichen
+GCA_026340285,Streptomyces_uncialis_NBC_01379____,Denmark,55.8081 N 9.3697 E,plant,Europe,plant
+GCA_036250755,Streptomyces_uncialis_NBC_01365____,Denmark,55.54717 N 8.37292 E,forest,Europe,soil
+GCA_012273655,Streptomyces_physcomitrii_LD120_____,China,,plant,Asia,plant
+GCA_001642995,Streptomyces_jeddahensis_G25_____,Saudi Arabia,,desert soil,Asia,soil
+GCA_013778455,Streptomyces_himalayensis_subsp_himalayensis_PSKA28___,India,34.01 N 74.47 E,soil,Asia,soil
+GCA_013912435,Streptomyces_himalayensis_subsp_aureolus_PSKA54___,India,34.01 N 74.47 E,soil,Asia,soil
+GCA_033584035,Streptomyces_scabiei_LBUM848_____,Canada,,crop,North America,plant
+GCA_033793725,Streptomyces_scabiei_ME19-01-7_____,USA,,crop,North America,plant
+GCA_000383595,Streptomyces_bottropensis_ATCC_25435_ATCC_25435__,USA,,forest soil,North America,soil
+GCA_033792025,Streptomyces_stelliscabiei_WI04-08A_____,USA,,crop,North America,plant
+GCA_033794585,Streptomyces_europaeiscabiei_ID09-01A_____,USA,,crop,North America,plant
+GCA_009184865,Streptomyces_phaeolivaceus_GY16_____,China,,phyllosphere,Asia,plant
+GCA_018927715,Streptomyces_brasiliscabiei_IBSBF2867_____,Brazil,,crop,South America,plant
+GCA_020010925,Streptomyces_griseiscabiei_NRRL_B-2795____,USA,42.94398 N 112.83800 W,crop,North America,plant
+GCA_014852565.2,Streptomyces_caniscabiei_ID03-3A_,USA,,crop,North America,plant
+GCA_014930355,Streptomyces_caniscabiei_ND05-3B_____,USA,,crop,North America,plant
+GCA_022385335,Streptomyces_deccanensis_KCTC_19241____,China,,,Asia,
+GCA_019599145,Streptomyces_akebiae_MG28_____,China,,soil,Asia,soil
+GCA_016598475,Streptomyces_adelaidensis_CAP261_____,Australia,35.024636 S 138.571604 E,rhizoplane,Oceania,soil
+GCA_030294945,Streptomyces_graminofaciens_A-8890_____,Japan,,soil,Asia,soil
+GCA_002214185,Streptomyces_capitiformicae_1H-SSA4_____,China,,insect,Asia,insect
+GCA_008386495,Streptomyces_tailanensis_TRM68348_____,China,40.7 N 81.16 E,soil,Asia,soil
+GCA_006547165,Streptomyces_ipomoeae_B12321_____,USA,,crop,North America,plant
+GCA_028863365,Streptomyces_neyagawaensis_JCM_4796____,Japan,,soil,Asia,soil
+GCA_028401405,Streptomyces_heilongjiangensis_NEAU-W2_____,China,,rhizoplane,Asia,soil
+GCA_009377235,Streptomyces_acidicola_K1PN6_____,Thailand,,soil,Asia,soil
+GCA_036226905,Streptomyces_pseudovenezuelae_NBC_00661____,USA,,crop,North America,plant
+GCA_036345035,Streptomyces_pseudovenezuelae_NBC_00598____,Denmark,,rhizosphere,Europe,soil
+GCA_001514145,Streptomyces_canus_DSM_40017____,USA,,soil,North America,soil
+GCA_036226545,Streptomyces_canus_NBC_00710____,Denmark,55.7881 N 12.5200 E,rhizosphere,Europe,soil
+GCA_036177905,Streptomyces_canus_NBC_00277____,Denmark,55.8714 N 12.4942 E,soil,Europe,soil
+GCA_003595235,Streptomyces_griseorubiginosus_3E-1_____,South Korea,36.375948 N 127.345504 E,rhizosphere,Asia,soil
+GCA_001514195,Streptomyces_griseorubiginosus_DSM_40469____,Russia,,soil,Asia,soil
+GCA_025399775,Streptomyces_fulvoviolaceus_ASQP_80____,India,,soil,Asia,soil
+GCA_001270505,Streptomyces_resistomycificus_NRRL_2290____,,,soil,,soil
+GCA_001514265,Streptomyces_resistomycificus_DSM_40133____,,,soil,,soil
+GCA_000721105,Streptomyces_cellulosae_NRRL_B-2687____,,,soil,,soil
+GCA_001685355,Streptomyces_lincolnensis_NRRL_2936____,USA,,,North America,
+GCA_003344445,Streptomyces_lincolnensis_LC-G_____,China,,industry,Asia,soil
+GCA_021173675,Streptomyces_lincolnensis_L4_____,China,,soil,Asia,soil
+GCA_003955715,Streptomyces_aquilus_GGCR-6_____,China,,plant,Asia,plant
+GCA_015163075,Streptomyces_justiciae_3R004_____,Thailand,,plant,Asia,plant
+GCA_024508375.2,Streptomyces_justiciae_RA-WS2_____,India,,soil,Asia,soil
+GCA_032248415,Streptomyces_justiciae_WPN32_____,Thailand,14.8712 N 102.0218 E,rhizosphere,Asia,soil
+GCA_019857225,Streptomyces_plumbidurans_KC_17012____,China,,mining,Asia,soil
+GCA_021441825,Streptomyces_spinosirectus_CRSS-Y-16_____,China,,phyllosphere,Asia,plant
+GCA_022698145,Streptomyces_spinosisporus_7R016_____,Thailand,,plant,Asia,plant
+GCA_021261325,Streptomyces_guryensis_NR30_____,South Korea,,industry,Asia,soil
+GCA_029223485,Streptomyces_coacervatus_JCM_17138____,Japan,,animal,Asia,animal
+GCA_022698165,Streptomyces_cylindrosporus_7R015_____,Thailand,,plant,Asia,plant
+GCA_023516615,Streptomyces_panaciradicis_NBRC_109811____,South Korea,,rhizoplane,Asia,soil
+GCA_028401765.1,Streptomyces_gilvifuscus_T113_____,South Korea,,forest soil,Asia,soil
+GCA_000225525.2,Streptomyces_zinciresistens_K42_____,China,,mining,Asia,soil
+GCA_003074055,Streptomyces_nigra_452_____,China,,mangrove soil,Asia,soil
+GCA_000719285,Streptomyces_bicolor_NRRL_B-5348____,,,soil,,soil
+GCA_003963535,Streptomyces_cyaneochromogenes_MK-45_____,China,,soil,Asia,soil
+GCA_001514235,Streptomyces_caeruleatus_NRRL_B-24802____,China,,rhizosphere,Asia,soil
+GCA_021474425,Streptomyces_muensis_DSM_103493____,,,soil,,soil
+GCA_004028635,Streptomyces_cyaneus_CGMCC_41671____,China,,,Asia,
+GCA_013375055,Streptomyces_chartreusis_NA02069_____,China,,marine,Asia,waters
+GCA_008704715,Streptomyces_chartreusis_ATCC_14922____,,,soil,,soil
+GCA_036010565,Streptomyces_chartreusis_NBC_00215____,Portugal,,garden,Europe,soil
+GCA_036345055,Streptomyces_chartreusis_NBC_00590____,Denmark,55.7881 N 12.5200 E,rhizosphere,Europe,soil
+GCA_001513975,Streptomyces_curacoi_DSM_40107____,Argentina,,soil,South America,soil
+GCA_015160855,Streptomyces_ferrugineus_CCTCC_AA2014009____,China,,,Asia,
+GCA_027270315,Streptomyces_cinnabarinus_DSM_40467____,,,soil,,soil
+GCA_014257025,Streptomyces_cupreus_PSKA01_____,India,,soil,Asia,soil
+GCA_030262575,Streptomyces_fuscus_GXMU-J15_____,China,21.624 N 108.908 E,coast,Asia,soil
+GCA_009709555,Streptomyces_blattellae_TRM63209_____,China,40.55 N 81.29 E,insect,Asia,insect
+GCA_001514305,Streptomyces_dysideae_RV15_____,,,marine animal,,animal
+GCA_008806595,Streptomyces_luteolifulvus_HIT-DPA4_____,China,,soil,Asia,soil
+GCA_020010905,Streptomyces_acidiscabies_NRRL_B-16520____,,,crop,,plant
+GCA_033793405,Streptomyces_acidiscabies_NB05-1H_____,Canada,,crop,North America,plant
+GCA_001485105,Streptomyces_acidiscabies_a10_____,Japan,32.0749 N 130.0739 E,farm soil,Asia,soil
+GCA_033794345,Streptomyces_niveiscabiei_MD20-5-1_____,,,crop,,plant
+GCA_014489635,Streptomyces_roseirectus_CRXT-G-22_____,China,,crop,Asia,plant
+GCA_001514205,Streptomyces_griseoruber_DSM_40281____,Japan,,soil,Asia,soil
+GCA_012044595,Streptomyces_antibioticus_DSM_41481____,,,soil,,soil
+GCA_026342305,Streptomyces_antibioticus_NBC_00282____,Denmark,55.6736 N 12.5997 E,plant,Europe,plant
+GCA_001896135.2,Streptomyces_phaeoluteigriseus_DSM_41896____,,,soil,,soil
+GCA_023923245,Streptomyces_phaeoluteigriseus_Qhu-M197_____,China,,soil,Asia,soil
+GCA_008704575.1,Streptomyces_galilaeus_ATCC_14969____,,,soil,,soil
+GCA_036172715,Streptomyces_bobili_NBC_00302____,Denmark,55.8075 N 12.4747 E,soil,Europe,soil
+GCA_026343715,Streptomyces_bobili_NBC_00018____,Denmark,55.7869 N 12.5189 E,plant,Europe,plant
+GCA_024539675,Streptomyces_hilarionis_IBSBF_2807____,Brazil,28.22 S 51.38 W,crop,South America,plant
+GCA_030816385,Streptomyces_achromogenes_W4I19-2_____,USA,,,North America,
+GCA_030816715,Streptomyces_achromogenes_B2I10_____,USA,,,North America,
+GCA_016860545,Streptomyces_asoensis_NBRC_13813____,Japan,,soil,Asia,soil
+GCA_030815485,Streptomyces_rishiriensis_B2I6_____,USA,,,North America,
+GCA_000974985.2,Streptomyces_mangrovisoli_MUSC_149____,Malaysia,,mangrove,Asia,waters
+GCA_009377175,Streptomyces_adustus_NBRC_109810____,South Korea,,soil,Asia,soil
+GCA_003994395,Streptomyces_griseoviridis_F1-27_____,USA,41 N 71 W,,North America,
+GCA_033238585,Streptomyces_cellostaticus_NBRC_12849____,Japan,,soil,Asia,soil
+GCA_002242805,Streptomyces_diastatochromogenes_DSM_40608____,Japan,,soil,Asia,soil
+GCA_001514035,Streptomyces_yokosukanensis_DSM_40224____,Japan,,soil,Asia,soil
+GCA_000725475,Streptomyces_durhamensis_NRRL_B-3309____,USA,,crop,North America,plant
+GCA_001027185,Streptomyces_incarnatus_NRRL_8089____,Japan,,soil,Asia,soil
+GCA_001419685,Streptomyces_puniciscabiei_NRRL_B-24456____,South Korea,,crop,Asia,plant
+GCA_020819595,Streptomyces_barringtoniae_JA03_____,Thailand,,rhizosphere,Asia,soil
+GCA_001735805,Streptomyces_fodineus_TW1S1_____,South Korea,36.6009 N 127.74620000 E,mining,Asia,soil
+GCA_001866665,Streptomyces_monashensis_MUSC_1____,Malaysia,,mangrove,Asia,waters
+GCA_009796285,Streptomyces_broussonetiae_T44_____,China,,rhizosphere,Asia,soil
+GCA_028751585,Streptomyces_lavenduligriseus_Tu901_____,Japan,,soil,Asia,soil
+GCA_023370675,Streptomyces_lavenduligriseus_GA1-1_____,China,,rhizosphere,Asia,soil
+GCA_000720835,Streptomyces_achromogenes_subsp_achromogenes_NRRL_B-2120__,Japan,,garden soil,Asia,soil
+GCA_001514055,Streptomyces_corchorusii_DSM_40340____,Bangladesh,,soil,Asia,soil
+GCA_020400655,Streptomyces_spinosus_SBTS01_____,Thailand,15.54937 N 103.80975 E,crop,Asia,plant
+GCA_021892415,Streptomyces_tricolor_DSM_41685____,Japan,,soil,Asia,soil
+GCA_017526105,Streptomyces_cyanogenus_S136_____,India,,soil,Asia,soil
+GCA_020400685,Streptomyces_echinatus_JCM4574_____,Angola,,soil,Africa,soil
+GCA_016741855,Streptomyces_musisoli_CH5-8_____,Thailand,,garden soil,Asia,soil
+GCA_016741775,Streptomyces_actinomycinicus_RCU-197_____,Thailand,,peat swamp soil,Asia,soil
+GCA_000802245.2,Streptomyces_pluripotens_MUSC_135____,Malaysia,3.800889 N 103.339639 E,mangrove,Asia,waters
+GCA_003675325,Streptomyces_dangxiongensis_Z022_____,China,,grass soil,Asia,soil
+GCA_000718315,Streptomyces_griseofuscus_NRRL_B-5429____,Japan,,soil,Asia,soil
+GCA_014673495,Streptomyces_griseofuscus_DSM_40191____,Japan,,,Asia,
+GCA_003933485,Streptomyces_griseofuscus_199_____,Brazil,,crop,South America,plant
+GCA_016467295,Streptomyces_murinus_Am1_____,China,,plant,Asia,plant
+GCA_025231465,Streptomyces_murinus_CR-43_____,Costa Rica,,tropical soil,North America,soil
+GCA_034424055,Streptomyces_murinus_STR-1_____,China,,crop,Asia,plant
+GCA_000980885.2,Streptomyces_malaysiense_MUSC_136____,Malaysia,,mangrove,Asia,waters
+GCA_007896895,Streptomyces_misionensis_66_____,Brazil,,soil,South America,soil
+GCA_001514215,Streptomyces_bungoensis_DSM_41781____,Japan,,soil,Asia,soil
+GCA_000725795,Streptomyces_seoulensis_NRRL_B-24310____,Korea,,soil,Asia,soil
+GCA_004328625,Streptomyces_seoulensis_KCTC_9819____,Korea,,soil,Asia,soil
+GCA_004784475,Streptomyces_bauhiniae_Bv016_____,Thailand,,phyllosphere,Asia,plant
+GCA_004784465,Streptomyces_griseoluteus_JCM_4765____,Japan,,soil,Asia,soil
+GCA_022846655,Streptomyces_seoulensis_HEK131_____,Japan,,soil,Asia,soil
+GCA_019104725,Streptomyces_corallincola_J2-1_____,Thailand,,marine animal,Asia,animal
+GCA_001005085.2,Streptomyces_humi_MUSC_119____,Malaysia,,mangrove,Asia,waters
+GCA_032656605,Streptomyces_sasae_JR-39_____,Korea,,rhizosphere,Asia,soil
+GCA_021462265,Streptomyces_shenzhenensis_DSM_42034____,China,,mangrove soil,Asia,soil
+GCA_003688995,Streptomyces_shenzhenensis_193_____,Brazil,,crop,South America,plant
+GCA_021538895,Streptomyces_olivochromogenes_A53_____,Brazil,,cerrado soil,South America,soil
+GCA_032656585,Streptomyces_herbicida_NEAU-HV9_____,China,,soil,Asia,soil
+GCA_008704515,Streptomyces_viridosporus_ATCC_39115____,,,soil,,soil
+GCA_000709915,Streptomyces_griseorubens_JSD-1_____,China,,soil,Asia,soil
+GCA_025427835,Streptomyces_lusitanus_FZ202_____,China,,rhizosphere,Asia,soil
+GCA_026339895,Streptomyces_viridodiastaticus_NBC_01548____,Denmark,55.7878 N 12.5267 E,soil,Europe,soil
+GCA_026340025,Streptomyces_viridodiastaticus_NBC_01458____,Denmark,55.63800 N 10.17497 E,island,Europe,soil
+GCA_020312235,Streptomyces_pseudogriseolus_N92_____,,,crop,,plant
+GCA_008632955,Streptomyces_tendae_139_____,China,,soil,Asia,soil
+GCA_000725125,Streptomyces_toyocaensis_NRRL_15009____,,,soil,,soil
+GCA_008312835,Streptomyces_marokkonensis_OANH409_____,China,8.49177 N 111.0187 E,marine,Asia,waters
+GCA_003665435,Streptomyces_fungicidicus_TXX3120_____,China,,animal,Asia,animal
+GCA_008704445,Streptomyces_prasinus_ATCC_13879____,,,soil,,soil
+GCA_036541045,Streptomyces_prasinus_WY33_____,China,42.3134 N 125.4285 E,soil,Asia,soil
+GCA_035918035,Streptomyces_hirsutus_NBC_01753____,Denmark,55.9175 N 11.9078 E,rhizosphere,Europe,soil
+GCA_012034205,Streptomyces_composti_SBST2-5_____,Thailand,,compost soil,Asia,soil
+GCA_000717055,Streptomyces_iakyrus_NRRL_ISP-5482____,Brazil,,soil,South America,soil
+GCA_036287475,Streptomyces_iakyrus_CGMCC_41912____,Belgium,,soil,Europe,soil
+GCA_001611795,Streptomyces_qaidamensis_S10_____,China,,soil,Asia,soil
+GCA_036042855,Streptomyces_violaceochromogenes_CGMCC_41753____,Belgium,,soil,Europe,soil
+GCA_005869865,Streptomyces_tibetensis_XZ_46____,China,29.36 N 96.01 E,soil,Asia,soil
+GCA_021474405,Streptomyces_indiaensis_DSM_43803____,India,,soil,Asia,soil
+GCA_030816375,Streptomyces_luteogriseus_W4I19-1_____,USA,,,North America,
+GCA_036347215,Streptomyces_luteogriseus_NBC_00712____,Denmark,55.7881 N 12.5200 E,rhizosphere,Europe,soil
+GCA_004803895,Streptomyces_hawaiiensis_ATCC_12236____,USA,21.289373 N 157.917480 W,soil,North America,soil
+GCA_025399755,Streptomyces_violarus_ASQP_29____,India,,soil,Asia,soil
+GCA_036014055,Streptomyces_violaceus_NBC_00456____,Spain,39.8714 N 3.0861 E,coast,Europe,soil
+GCA_036014075,Streptomyces_violaceus_NBC_00450____,Spain,39.8714 N 3.0861 E,coast,Europe,soil
+GCA_031593255,Streptomyces_janthinus_JCM_4387____,China,,,Asia,
+GCA_021390235,Streptomyces_purpurascens_DSM_40310____,,,soil,,soil
+GCA_024442315,Streptomyces_koelreuteriae_CRLD-Y-1_____,China,,phyllosphere,Asia,plant
+GCA_002148965,Streptomyces_swartbergensis_HMC13_____,South Africa,,mountain soil,Africa,soil
+GCA_033216215,Streptomyces_coeruleorubidus_CICC_11043____,China,,soil,Asia,soil
+GCA_002150735,Streptomyces_africanus_NRRL_B-24243____,South Africa,,soil,Africa,soil
+GCA_030816955,Streptomyces_africanus_B3I12_____,USA,,,North America,
+GCA_030817705,Streptomyces_afghaniensis_W1I20_____,USA,,,North America,
+GCA_021440105,Streptomyces_lomondensis_DSM_41428____,,,soil,,soil
+GCA_035917655,Streptomyces_anthocyanicus_NBC_01777____,Denmark,55.9508 N 10.5597 E,soil,Europe,soil
+GCA_033406955,Streptomyces_violaceoruber_CGMCC_41801____,China,,,Asia,
+GCA_020404845,Streptomyces_hyderabadensis_JCM_17657____,India,,farm soil,Asia,soil
+GCA_009829585,Streptomyces_tendae_UTMC_3329____,Iran,37.1226 N 50.0014 E,acidic soil,Asia,soil
+GCA_010820575,Streptomyces_tendae_VITAKN_____,India,9.2876 N 79.3129 E,coast,Asia,soil
+GCA_947495155,Streptomyces_tendae_3-35-2-Jfasta_____,China,37.562 N 122.121 E,marine algae,Asia,waters
+GCA_023534765,Streptomyces_ardesiacus_6G-OA-21_____,China,,rhizosphere,Asia,soil
+GCA_014280945,Streptomyces_salinarius_SS06011_____,Thailand,,saline lagoons,Asia,waters
+GCA_024448155,Streptomyces_coelicoflavus_DBR11_____,India,,soil,Asia,soil
+Streptomyces_USAL,CANU_lbl034_1contigs_____ (Streptomyces_sp_RSPR2),Spain,,compost soil,Europe,soil
+GCA_026341945,Streptomyces_coelicoflavus_NBC_00465____,Denmark,,garden soil,Europe,soil
+GCA_036101175,Streptomyces_coelicoflavus_NBC_00357____,Denmark,,garden soil,Europe,soil
+GCA_015244315,Streptomyces_olivaceus_SCSIO_T05____,Indian Ocean,,marine,Indian Ocean,waters
+GCA_027925645,Streptomyces_olivaceus_DC10-5_____,Japan,,marine animal,Asia,animal
+GCA_029542005,Streptomyces_olivaceus_B-81_____,Peru,,saline lagoons,South America,waters
+GCA_027925665,Streptomyces_olivaceus_N11-26_____,Japan,,marine,Asia,waters
+GCA_020092645,Streptomyces_olivaceus_CR8_____,Costa Rica,10.85 N 85.62 W,insect,North America,insect
+GCA_001660045,Streptomyces_parvulus_2297_____,United Kingdom,52.37202 N 1.13170999 E,,Europe,
+GCA_020907265,Streptomyces_parvulus_SX6_____,Vietnam,,mangrove plant,Asia,plant
+GCA_020515735,Streptomyces_parvulus_LP03_____,Thailand,,lichen,Asia,lichen
+GCA_001267885,Streptomyces_ambofaciens_ATCC_23877_ATCC_23877__,France,,soil,Europe,soil
+GCA_001632865,Streptomyces_ambofaciens_DSM_40697____,Italy,,soil,Europe,soil
+GCA_002005225,Streptomyces_pactum_ACT12_____,China,,soil,Asia,soil
+GCA_000739045,Streptomyces_mutabilis_TRM_45540____,China,,soil,Asia,soil
+GCA_027570385,Streptomyces_mutabilis_TRM76172_____,China,,soil,Asia,soil
+GCA_025398775,Streptomyces_vinaceusdrappus_AC-40_____,Egypt,,plant,Africa,plant
+GCA_030863865,Streptomyces_rochei_JK1_____,China,,soil,Asia,soil
+GCA_034422375,Streptomyces_rochei_D21E05_____,China,,soil,Asia,soil
+Streptomyces_USAL,CANU_lbl026_1contigs_____ (Streptomyces_sp_RS36),Spain,,insect,Europe,insect
+GCA_029967545,Streptomyces_rochei_CC36_____,Mexico,26.84 N 102.13 W,soil,North America,soil
+GCA_020312215,Streptomyces_solaniscabiei_FS66_____,,,crop,,plant
+GCA_014534645,Streptomyces_griseicoloratus_TRM_S81-3____,China,,crop,Asia,plant
+GCA_020521275,Streptomyces_daghestanicus_NBRC_12762____,,,soil,,soil
+GCA_001013905,Streptomyces_leeuwenhoekii_C34_DSM42122_NRRLB-24963___,Chile,,saline lagoons,South America,waters
+GCA_001047315,Streptomyces_leeuwenhoekii_C58_____,,19.28 S 70.2 W,desert soil,,soil
+GCA_001514125,Streptomyces_longwoodensis_DSM_41677____,,,soil,,soil
+GCA_005280215,Streptomyces_lasalocidi_X-537_____,USA,,soil,North America,soil
+GCA_036346085,Streptomyces_longwoodensis_NBC_00541____,Denmark,55.8694 N 12.4981 E,rhizosphere,Europe,soil
+GCA_036347155,Streptomyces_longwoodensis_NBC_00735____,USA,,garden,North America,soil
+GCA_005280195,Streptomyces_galbus_DSM_40089____,,,soil,,soil
+GCA_003208035,Streptomyces_actuosus_ATCC_25421____,China,,soil,Asia,soil
+GCA_016921115,Streptomyces_actuosus_VRA1_____,India,10.1024 N 76.2044 E,mangrove soil,Asia,soil
+GCA_001906585,Streptomyces_kebangsaanensis_SUK12_____,Malaysia,,plant endophyte,Asia,plant
+GCA_003270085,Streptomyces_triticisoli_NEAU-DSCPA1-4-4_____,China,,soil,Asia,soil
+GCA_002155915,Streptomyces_thermovulgaris_NRRL_B-12375____,Germany,,animal,Europe,animal
+GCA_002154505,Streptomyces_carpinensis_NRRL_B-16921____,Brazil,,soil,South America,soil
+GCA_019890635,Streptomyces_sennicomposti_RCPT1-4_____,Thailand,,compost soil,Asia,soil
+GCA_012034235,Streptomyces_thermoviolaceus_subsp_thermoviolaceus_NBRC_13905__,Thailand,,soil,Asia,soil
+GCA_023713605,Streptomyces_thermoviolaceus_MER_196A____,USA,,anthropogenic environment,North America,soil
+GCA_021394575,Streptomyces_thermodiastaticus_DSM_40573____,,,soil,,soil
+GCA_902506575,Streptomyces_mexicanus_Marseille-Q0842_____,,,animal,,animal
+GCA_029269835,Streptomyces_tropicalis_K1PA1_____,Thailand,,peat swamp soil,Asia,soil
+GCA_003261055,Streptomyces_cadmiisoli_ZFG47_____,China,,soil,Asia,soil
+GCA_006539505,Streptomyces_spinoverrucosus_NBRC_14228____,,,air,,air
+GCA_013433285,Streptomyces_gossypiisoli_TRM_44567____,China,,crop,Asia,plant
+GCA_015712165,Streptomyces_spinoverrucosus_SNB-032_____,USA,29.610000 N 94.775000 W,marine,North America,waters
+GCA_015160875,Streptomyces_chromofuscus_DSM_40273____,Germany,,,Europe,
+GCA_008704995,Streptomyces_nodosus_ATCC_14899____,,,soil,,soil
+GCA_017352335,Streptomyces_nodosus_ZJB2016050_____,China,,soil,Asia,soil
+GCA_001866645,Streptomyces_colonosanans_MUSC_93____,Malaysia,,mangrove,Asia,waters
+GCA_023887685,Streptomyces_macrolidinus_RY43-2_____,Thailand,,peat swamp soil,Asia,soil
+GCA_021462825,Streptomyces_glomeratus_DSM_41457____,,,soil,,soil
+GCA_036281785,Streptomyces_chiangmaiensis_TA4-1_____,,,insect,,insect
+GCA_025642135,Streptomyces_cynarae_HUAS_13-4____,China,,rhizosphere,Asia,soil
+GCA_001642695.2,Streptomyces_chilikensis_RC_1830____,India,19.71 N 85.1900 E,freshwater,Asia,waters
+GCA_030135485,Streptomyces_fragilis_ISP_5044____,USA,,soil,North America,soil
+GCA_036189065,Streptomyces_jietaisiensis_NBC_00522____,USA,,rhizosphere,North America,soil
+GCA_036224405,Streptomyces_jietaisiensis_NBC_00489____,Germany,,compost soil,Europe,soil
+GCA_036190545,Streptomyces_jietaisiensis_NBC_00504____,Denmark,,rhizosphere,Europe,soil
+GCA_004023625,Streptomyces_cavernae_SYSU_K10008____,China,,soil,Asia,soil
+GCA_000716805,Streptomyces_yerevanensis_NRRL_B-16943____,,,soil,,soil
+GCA_011045025,Streptomyces_ureilyticus_YC419_____,Turkey,,freshwater,Europe,waters
+GCA_011045015,Streptomyces_scabichelini_HC44_____,Turkey,,soil,Europe,soil
+GCA_0057685552,Streptomyces_sporangiiformans_NEAU-SSA_1____,China,,soil,Asia,soil
+GCA_005786655,Streptomyces_montanus_NEAU-C151_____,China,,soil,Asia,soil
+GCA_001418335,Streptomyces_aurantiacus_NRRL_ISP-5412____,Russia,,,Asia,
+GCA_030816745,Streptomyces_aurantiacus_B2I16_____,USA,,,North America,
+GCA_003024195,Streptomyces_dioscori_A217_____,China,,crop,Asia,plant
+GCA_018070025,Streptomyces_liliiviolaceus_BH-SS-21_____,China,,crop,Asia,plant
+GCA_026341275,Streptomyces_ortus_A15ISP2-DRY2_____,Atlantic Ocean,15.44530 N 51.09606 W,marine animal,Atlantic Ocean,animal
+GCA_026183975,Streptomyces_tauricus_Act25_____,Russia,,soil,Asia,soil
+GCA_036204065,Streptomyces_tauricus_NBC_00189____,Denmark,55.7869 N 12.5189 E,soil,Europe,soil
+GCA_008369065,Streptomyces_apricus_SUN51_____,USA,43.17 N 89.24 W,soil,North America,soil
+GCA_027107535,Streptomyces_aurantiacus_Qhu-M197_____,China,,desert soil,Asia,soil
+GCA_026343615,Streptomyces_phaeochromogenes_NBC_00034____,Denmark,,soil,Europe,soil
+GCA_036133475,Streptomyces_phaeochromogenes_NBC_00333____,United Kingdom,55.9544 N 3.1847 W,soil,Europe,soil
+GCA_035917195,Streptomyces_phaeochromogenes_NBC_00186____,Denmark,55.7869 N 12.5189 E,soil,Europe,soil
+GCA_035957715,Streptomyces_phaeochromogenes_NBC_01328____,Germany,,garden,Europe,soil
+GCA_035918055,Streptomyces_phaeochromogenes_NBC_01752____,Denmark,55.9175 N 11.9078 E,rhizosphere,Europe,soil
+GCA_030817415,Streptomyces_umbrinus_V2I4_____,USA,,,North America,
+GCA_016598615,Streptomyces_liliifuscus_ZYC-3_____,China,,soil,Asia,soil
+GCA_008905045,Streptomyces_albicerus_TRM68295_____,China,40.70 N 81.16 E,freshwater,Asia,waters
+GCA_033794965,Streptomyces_turgidiscabies_ATCC_700248____,Japan,,crop,Asia,plant
+GCA_002154675,Streptomyces_reticuliscabiei_NRRL_B-24446____,France,,crop,Europe,plant
+GCA_030817775,Streptomyces_turgidiscabies_W2I16_____,USA,,,North America,
+GCA_002954775,Streptomyces_geranii_A301_____,China,,plant,Asia,plant
+GCA_026342395,Streptomyces_prunicolor_NBC_00263____,Denmark,55.8706 N 12.4950 E,soil,Europe,soil
+GCA_033100835,Streptomyces_prunicolor_RR29_____,Russia,56.30693 N 85.47063 E,rhizosphere,Asia,soil
+GCA_000716435,Streptomyces_xylophagus_NRRL_B-12029____,,,farm soil,,soil
+GCA_002911015,Streptomyces_populi_A249_____,China,,plant,Asia,plant
+GCA_008868685,Streptomyces_triticiradicis_NEAU-H2_____,China,,soil,Asia,soil
+GCA_025399795,Streptomyces_rhizosphaerihabitans_ASQP_78____,India,,soil,Asia,soil
+GCA_001514115,Streptomyces_olivochromogenes_DSM_40451____,,,soil,,soil
+GCA_026339635,Streptomyces_mirabilis_NBC_01697____,Netherlands,,crop,Europe,plant
+GCA_026340005,Streptomyces_mirabilis_NBC_01472____,Denmark,56.09617 N 9.77497 E,soil,Europe,soil
+GCA_036073155,Streptomyces_mirabilis_NBC_00379____,,,grass soil,,soil
+GCA_018310535,Streptomyces_mirabilis_P16B-1_____,Germany,50.85757 N 12.14234 E,mining,Europe,soil
+GCA_009498275,Streptomyces_fagopyri_QMT-28_____,China,,soil,Asia,soil
+GCA_002946835,Streptomyces_dengpaensis_XZHG99_____,China,,soil,Asia,soil
+GCA_001514135,Streptomyces_avermitilis_DSM_46492____,USA,,soil,North America,soil
+GCA_005406005,Streptomyces_avermitilis_cw2_____,Japan,,soil,Asia,soil
+GCA_000717725,Streptomyces_pyridomyceticus_NRRL_ISP-5024____,Japan,,rhizosphere,Asia,soil
+GCA_000961885,Streptomyces_rubellomurinus_ATCC_31215____,Japan,,soil,Asia,soil
+GCA_009569385,Streptomyces_kaniharaensis_SF-557_____,Japan,,soil,Asia,soil
+GCA_003205575,Streptomyces_tateyamensis_ATCC_21389____,Japan,,soil,Asia,soil

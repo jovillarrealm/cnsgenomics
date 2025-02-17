@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 dir_script = os.path.dirname(__file__) + "/"
 
-country2continent = build_continent_map()
 
 
 def build_continent_map():
@@ -18,6 +17,7 @@ def build_continent_map():
             country2continent[row[1]] = row[0]
     return country2continent
 
+country2continent = build_continent_map()
 
 def reduce_hosts(value):
     if isinstance(value, float):
@@ -78,7 +78,7 @@ df = pd.read_excel(
 df["Continent"] = df["País"].map(lambda i: country2continent[i], na_action="ignore")
 df["Host"] = df["Hospedador"].map(reduce_hosts, na_action="ignore")
 df.to_csv(dir_script + "simple_Informacion_filogeografica.csv", index=False)
-
+df["GCA"].to_csv(dir_script + "preferred_list.csv", index=False)
 
 def plot_figs():
     plt.figure(figsize=(8, 9))  # Increase the size of the figure (width=8, height=6)
