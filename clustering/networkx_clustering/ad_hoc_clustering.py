@@ -54,14 +54,10 @@ if __name__ == "__main__":
         )
         representatives.extend(isolates)
         if preferred_list:
-            representatives=list(set(representatives).union(preferred_set))
+            representatives = list(set(representatives).union(preferred_set))
 
         filename, _ = os.path.splitext(hyper_gen_tsv_path)
         representative_filename = filename + "_" + str(threshold) + "represent.txt"
         with open(representative_filename, "w") as g:
             g.write("\n".join(representatives))
-        links.make_representative_links(
-            representative_filename, genomic_dir, threshold
-        )
-
-        
+        links.make_representative_links(representative_filename, genomic_dir, threshold)

@@ -6,8 +6,9 @@ They were also meant for a single taxon, so they must change several thing on di
 
 
 """
+
 # For clustering
-thresholds = [99.0, 98.0, 97.0, 96.0, 95.0, 94.0, 93.0, 92.0, 91.0, 90.0 ]
+thresholds = [99.0, 98.0, 97.0, 96.0, 95.0, 94.0, 93.0, 92.0, 91.0, 90.0]
 
 # For filtering
 filename = "filename"

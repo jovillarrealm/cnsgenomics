@@ -27,10 +27,9 @@ def create_clusters_with_weights(filename, threshold):
             G.add_node(G1)
             G.add_node(G2)
 
-
     # Find connected components, which are your clusters
     clusters = tuple(frozenset(i) for i in nx.connected_components(G))
-    
+
     # Find isolated nodes (nodes with no edges)
     isolated_nodes = tuple(frozenset([i]) for i in nx.isolates(G))
 
@@ -50,16 +49,15 @@ def create_clusters_with_weights(filename, threshold):
     return G, weighted_clusters, connected_nodes, isolated_nodes
 
 
-
 def write_clusters(csv_file_name):
     """It extracts clusters and singletons, writes them to separate files"""
-    
+
     for threshold in params.thresholds:
         print(f"Doing {threshold}")
         filename, _ = os.path.splitext(csv_file_name)
         clusters_filename = filename + "_" + f"{threshold}_clusters.csv"
         with open(clusters_filename, "w") as f:
-            isolates_filename=filename + "_" + f"{threshold}_isolates.txt"
+            isolates_filename = filename + "_" + f"{threshold}_isolates.txt"
             with open(isolates_filename, "w") as g:
                 G, w_clusters, clusters, isolates = create_clusters_with_weights(
                     csv_file_name, threshold
@@ -69,8 +67,9 @@ def write_clusters(csv_file_name):
                 isolates = tuple(tuple(isolate)[0] for isolate in isolates)
                 for cluster in clusters:
                     connected_writer.writerow(cluster)
-                g.write('\n'.join(isolates))
+                g.write("\n".join(isolates))
                 yield clusters, isolates, threshold
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -81,5 +80,5 @@ if __name__ == "__main__":
         sys.exit(1)
     hyper_gen_output_file = sys.argv[1]
     stats_file_name = sys.argv[2]
-    for _,_,t in write_clusters(hyper_gen_output_file):
+    for _, _, t in write_clusters(hyper_gen_output_file):
         print(t)
